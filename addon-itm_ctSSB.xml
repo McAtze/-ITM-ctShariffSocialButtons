@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="1.23.1" version_id="102310" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="" filesumclass="" ab_pathes="">
+<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="1.24.0" version_id="102400" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -81,6 +81,21 @@
 		<xen:disabled>
 			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
 			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TWB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TWB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tencent_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tencent_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_QZ]" value="1" {xen:if {$preparedOption.option_value.ctSSB_QZ}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_qzone}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_qzone_explain}</p>
 		</xen:disabled>
 
 		<xen:disabled>
@@ -179,6 +194,21 @@
 			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
 			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
 		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TWB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TWB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tencent_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tencent_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_QZ]" value="1" {xen:if {$preparedOption.option_value.ctSSB_QZ}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_qzone}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_qzone_explain}</p>
+		</xen:disabled>
 
 		<xen:disabled>
 			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Info]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Info}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_info}</label>
@@ -276,6 +306,21 @@
 			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
 			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
 		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TWB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TWB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tencent_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tencent_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_QZ]" value="1" {xen:if {$preparedOption.option_value.ctSSB_QZ}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_qzone}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_qzone_explain}</p>
+		</xen:disabled>
 
 		<xen:disabled>
 			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Info]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Info}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_info}</label>
@@ -372,6 +417,21 @@
 		<xen:disabled>
 			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
 			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TWB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TWB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tencent_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tencent_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_QZ]" value="1" {xen:if {$preparedOption.option_value.ctSSB_QZ}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_qzone}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_qzone_explain}</p>
 		</xen:disabled>
 
 		<xen:disabled>
@@ -479,6 +539,21 @@
 			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
 			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
 		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TWB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TWB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tencent_weibo}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tencent_weibo_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_QZ]" value="1" {xen:if {$preparedOption.option_value.ctSSB_QZ}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_qzone}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_qzone_explain}</p>
+		</xen:disabled>
 
 		<xen:disabled>
 			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Info]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Info}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_info}</label>
@@ -532,6 +607,9 @@ ctSSB_RD
 ctSSB_SU
 ctSSB_THR
 ctSSB_AT
+ctSSB_WB
+ctSSB_TWB
+ctSSB_QZ
 ctSSB_Info
 ctSSB_Count</sub_options>
       <relation group_id="itm_ctSSB" display_order="200"/>
@@ -555,6 +633,9 @@ ctSSB_RD
 ctSSB_SU
 ctSSB_THR
 ctSSB_AT
+ctSSB_WB
+ctSSB_TWB
+ctSSB_QZ
 ctSSB_Info
 ctSSB_Count</sub_options>
       <relation group_id="itm_ctSSB" display_order="300"/>
@@ -578,6 +659,9 @@ ctSSB_RD
 ctSSB_SU
 ctSSB_THR
 ctSSB_AT
+ctSSB_WB
+ctSSB_TWB
+ctSSB_QZ
 ctSSB_Info
 ctSSB_Count</sub_options>
       <relation group_id="itm_ctSSB" display_order="500"/>
@@ -601,6 +685,9 @@ ctSSB_RD
 ctSSB_SU
 ctSSB_THR
 ctSSB_AT
+ctSSB_WB
+ctSSB_TWB
+ctSSB_QZ
 ctSSB_Info
 ctSSB_Count</sub_options>
       <relation group_id="itm_ctSSB" display_order="100"/>
@@ -689,6 +776,9 @@ ctSSB_RD
 ctSSB_SU
 ctSSB_THR
 ctSSB_AT
+ctSSB_WB
+ctSSB_TWB
+ctSSB_QZ
 ctSSB_Info
 ctSSB_Count
 widgetOrient</sub_options>
@@ -782,6 +872,8 @@ widgetOrient</sub_options>
     <phrase title="option_itm_ctSSB_mail_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
     <phrase title="option_itm_ctSSB_pinterest" version_id="101612" version_string="1.16.1"><![CDATA[Show Pinterest]]></phrase>
     <phrase title="option_itm_ctSSB_pinterest_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_qzone" global_cache="1" version_id="102310" version_string="1.23.1"><![CDATA[Show Qzone]]></phrase>
+    <phrase title="option_itm_ctSSB_qzone_explain" global_cache="1" version_id="102310" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_reddit" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Reddit]]></phrase>
     <phrase title="option_itm_ctSSB_reddit_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_ResWidth" version_id="101615" version_string="1.16.2"><![CDATA[Responsive fixed width]]></phrase>
@@ -789,6 +881,8 @@ widgetOrient</sub_options>
 Set width in px (e.g. 62px).]]></phrase>
     <phrase title="option_itm_ctSSB_stumbleupon" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Stumbleupon]]></phrase>
     <phrase title="option_itm_ctSSB_stumbleupon_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_tencent_weibo" global_cache="1" version_id="102310" version_string="1.23.1"><![CDATA[Show Tencent Weibo]]></phrase>
+    <phrase title="option_itm_ctSSB_tencent_weibo_explain" global_cache="1" version_id="102310" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_theme" version_id="10001" version_string="1.0.0"><![CDATA[Choose Button Theme]]></phrase>
     <phrase title="option_itm_ctSSB_theme_explain" version_id="101612" version_string="1.16.1"><![CDATA[Set the theme for the buttons.]]></phrase>
     <phrase title="option_itm_ctSSB_threema" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Threema]]></phrase>
@@ -797,6 +891,8 @@ Set width in px (e.g. 62px).]]></phrase>
     <phrase title="option_itm_ctSSB_tumblr_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_twitter" version_id="101612" version_string="1.16.1"><![CDATA[Show Twitter]]></phrase>
     <phrase title="option_itm_ctSSB_twitter_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_weibo" global_cache="1" version_id="102310" version_string="1.23.1"><![CDATA[Show Weibo]]></phrase>
+    <phrase title="option_itm_ctSSB_weibo_explain" global_cache="1" version_id="102310" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_whatsapp" version_id="101612" version_string="1.16.1"><![CDATA[Show WhatsApp]]></phrase>
     <phrase title="option_itm_ctSSB_whatsapp_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
     <phrase title="option_itm_ctSSB_xenMiG_widget" version_id="101612" version_string="1.16.1"><![CDATA[xenMiG Portal Widget]]></phrase>
@@ -952,6 +1048,9 @@ data-services="[
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_THR}, ',&quot;threema&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_WB}, ',&quot;weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_TWB}, ',&quot;tencent-weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_QZ}, ',&quot;qzone&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, ',&quot;mail&quot;'}
 {xen:if '{$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
@@ -1029,6 +1128,9 @@ data-services="[
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_THR}, ',&quot;threema&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_WB}, ',&quot;weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_TWB}, ',&quot;tencent-weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_QZ}, ',&quot;qzone&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, ',&quot;mail&quot;'}
 {xen:if '{$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
 {xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
@@ -1037,8 +1139,27 @@ data-services="[
 $0
 </xen:if>]]></replace>
     </modification>
-    <modification template="xengallery_media_view_sidebar" modification_key="SetButtonsIntoTemplate" description="Set Buttons into XFMG Template" execution_order="10" enabled="1" action="preg_replace">
-      <find><![CDATA[#(<xen:hook name="sidebar_share_page_options">.*)(</xen:hook>)#sU]]></find>
+    <modification template="xengallery_media_view_sidebar" modification_key="SetButtonsIntoTemplate" description="Set Buttons into XFMG Template" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[<xen:if is="{$xenOptions.tweet.enabled}">
+										<div class="tweet shareControl">
+											<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"
+											   data-lang="{xen:helper twitterLang, $visitorLanguage.language_code}"
+											   data-url="{$url}"
+											{xen:if {$xenOptions.tweet.via}, 'data-via="{$xenOptions.tweet.via}"'}
+											{xen:if {$xenOptions.tweet.related}, 'data-related="{$xenOptions.tweet.related}"'}>{xen:phrase tweet}</a>
+										</div>
+									</xen:if>
+									<xen:if is="{$xenOptions.facebookLike}">
+										<div class="facebookLike shareControl">
+											<xen:container var="$facebookSdk">1</xen:container>
+											<div class="fb-like" data-href="{$url}" data-layout="button_count" data-action="{$xenOptions.facebookLikeAction}" data-font="trebuchet ms" data-colorscheme="{xen:property fbColorScheme}"></div>
+										</div>
+									</xen:if>									
+									<xen:if is="{$xenOptions.plusone}">
+										<div class="plusone shareControl">
+											<div class="g-plusone" data-size="medium" data-count="true" data-href="{$url}"></div>
+										</div>
+									</xen:if>]]></find>
       <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_enable_XFMG}">
 <div class="shariff" 
 {xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_Count}, 'data-backend-url="js/itm/shariff/backend/"'} 
@@ -1067,6 +1188,9 @@ data-services="[
 {xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_THR}, ',&quot;threema&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_WB}, ',&quot;weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_TWB}, ',&quot;tencent-weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_QZ}, ',&quot;qzone&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_EM}, ',&quot;mail&quot;'}
 {xen:if '{$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
 {xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
@@ -1078,9 +1202,9 @@ $0
     <modification template="PAGE_CONTAINER" modification_key="SetCSSforAddOn" description="Insert CSS in Template" execution_order="10" enabled="1" action="str_replace">
       <find><![CDATA[<!--XenForo_Require:CSS-->]]></find>
       <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_insertCSS} == 'min'">
-  <link rel="stylesheet" href="styles/itm/shariff/shariff.min.css">
+  <link rel="stylesheet" href="//cdn.it-maku.com/git/shariff-1.24.0/shariff.min.css" />
 <xen:else />
-  <link rel="stylesheet" href="styles/itm/shariff/shariff.complete.css">
+  <link rel="stylesheet" href="//cdn.it-maku.com/git/shariff-1.24.0/shariff.complete.css" />
 </xen:if>
 $0]]></replace>
     </modification>
@@ -1114,6 +1238,9 @@ data-services="[
 {xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_THR}, ',&quot;threema&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_WB}, ',&quot;weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_TWB}, ',&quot;tencent-weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_QZ}, ',&quot;qzone&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_EM}, ',&quot;mail&quot;'}
 {xen:if '{$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
 {xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
@@ -1126,9 +1253,9 @@ $0
       <find><![CDATA[<xen:include template="page_container_js_body" />]]></find>
       <replace><![CDATA[$0
 <xen:if is="{$xenOptions.itm_ctSSB_insertJS} == 'min'">
-  <script src="js/itm/shariff/shariff.min.js"></script>
+  <script src="//cdn.it-maku.com/git/shariff-1.24.0/shariff.min.js" /"></script>
 <xen:else />
-  <script src="js/itm/shariff/shariff.complete.js"></script>
+  <script src="//cdn.it-maku.com/git/shariff-1.24.0/shariff.complete.js" /"></script>
 </xen:if>]]></replace>
     </modification>
     <modification template="xenmig_portal_widget_share_page.css" modification_key="SetResponsiveToShareTemplate" description="Set Responsive Buttons into xenMiG Share Widget" execution_order="10" enabled="1" action="str_replace">
@@ -1192,7 +1319,10 @@ data-services="[
 {xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_RD}, ',&quot;reddit&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_THR}, ',&quot;threema&quot;'}
-{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_AT}, ',&quot;weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_WB}, ',&quot;tencent-weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_TWB}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_QZ}, ',&quot;qzone&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_EM}, ',&quot;mail&quot;'}
 {xen:if '{$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
 {xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
@@ -1249,6 +1379,9 @@ data-services="[
 {xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_THR}, ',&quot;threema&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_WB}, ',&quot;weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_TWB}, ',&quot;tencent-weibo&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_QZ}, ',&quot;qzone&quot;'}
 {xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_EM}, ',&quot;mail&quot;'}
 {xen:if '{$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
 {xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
