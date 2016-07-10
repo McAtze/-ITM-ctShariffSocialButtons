@@ -14,7 +14,7 @@ Wenn sich jemand für die Arbeit bedanken möchte, kann er mich gerne bei [PayPa
 
 ## Anfragen & Vorschläge
 * [XenDACH Ressourcen](http://www.xendach.de/resources/itm-ct-shariff-social-buttons.248/)
-* [IT-MaKu Support] (https://www.it-maku.com/d/itm-ct-shariff-social-buttons.12/)
+* [IT-MaKu Support] (https://www.it-maku.com/products/itm-ct-shariff-social-buttons.4/)
 
 Bekannte Xenforo AddOns die unterstützt werden:
   * [Xenforo Media Gallery](https://xenforo.com/purchase/)
