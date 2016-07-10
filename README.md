@@ -23,12 +23,12 @@ Xenforo AddOns that will work with these Share Options:
 
 ## Screenshots
 #### Options in ACP
-![Options#1 in ACP](https://cdn.it-maku.com/git/shariff/Options#1.png)
-![Options#2 in ACP](https://cdn.it-maku.com/git/shariff/Options#2.png)
-![Options#3 in ACP](https://cdn.it-maku.com/git/shariff/Options#3.png)
-![Options#4 in ACP](https://cdn.it-maku.com/git/shariff/Options#4.png)
-![Options#5 in ACP](https://cdn.it-maku.com/git/shariff/Options#5.png)
-![Options#6 in ACP](https://cdn.it-maku.com/git/shariff/Options#6.png)
+![Options#1 in ACP](https://cdn.it-maku.com/git/shariff/Options-1.png)
+![Options#2 in ACP](https://cdn.it-maku.com/git/shariff/Options-2.png)
+![Options#3 in ACP](https://cdn.it-maku.com/git/shariff/Options-3.png)
+![Options#4 in ACP](https://cdn.it-maku.com/git/shariff/Options-4.png)
+![Options#5 in ACP](https://cdn.it-maku.com/git/shariff/Options-5.png)
+![Options#6 in ACP](https://cdn.it-maku.com/git/shariff/Options-6.png)
 #### Buttons in Sidebar
 ![Buttons in Sidebar](https://cdn.it-maku.com/git/shariff/Sidebar.png)
 #### Default Theme
