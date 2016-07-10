@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="1.23.1" version_id="102310" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="" filesumclass="" ab_pathes="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates>
+    <template title="itm_ctSSB_enable_ctaFT"><![CDATA[<xen:checkboxunit label="{$preparedOption.title}">
+	<xen:option name="{$fieldPrefix}[{$preparedOption.option_id}][enabled]" value="1" selected="{$preparedOption.option_value.enabled}" label="{xen:phrase itm_ctSSB_option_enable_ctaFT}">
+	<xen:hint>{xen:phrase itm_ctSSB_option_enable_ctaFT_explain}</xen:hint>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_facebook}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_facebook_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WA]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WA}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_whatsapp}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_whatsapp_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TW]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TW}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_twitter}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_twitter_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_GP]" value="1" {xen:if {$preparedOption.option_value.ctSSB_GP}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_googleplus}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_googleplus_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_LI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_LI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_linkedin}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_linkedin_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_PIN]" value="1" {xen:if {$preparedOption.option_value.ctSSB_PIN}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_pinterest}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_pinterest_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_XI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_XI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_xing}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_xing_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_EM]" value="1" {xen:if {$preparedOption.option_value.ctSSB_EM}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_mail}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_mail_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tumblr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tumblr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FL]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FL}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_flattr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_flattr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_DS]" value="1" {xen:if {$preparedOption.option_value.ctSSB_DS}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_diaspora}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_diaspora_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_RD]" value="1" {xen:if {$preparedOption.option_value.ctSSB_RD}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_reddit}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_reddit_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_SU]" value="1" {xen:if {$preparedOption.option_value.ctSSB_SU}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_stumbleupon}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_stumbleupon_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_THR]" value="1" {xen:if {$preparedOption.option_value.ctSSB_THR}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_threema}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_threema_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Info]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Info}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_info}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_info_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Count]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Count}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_counts}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_counts_explain}</p>
+		</xen:disabled>
+
+	</xen:option>
+
+	<xen:html>
+		{xen:raw $editLink}
+		<input type="hidden" name="{$listedFieldName}" value="{$preparedOption.option_id}" />
+	</xen:html>
+
+</xen:checkboxunit>]]></template>
+    <template title="itm_ctSSB_enable_sharePage"><![CDATA[<xen:checkboxunit label="{$preparedOption.title}">
+	<xen:option name="{$fieldPrefix}[{$preparedOption.option_id}][enabled]" value="1" selected="{$preparedOption.option_value.enabled}" label="{xen:phrase itm_ctSSB_option_enable_sharePage}">
+	<xen:hint>{xen:phrase itm_ctSSB_option_enable_sharePage_explain}</xen:hint>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_facebook}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_facebook_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WA]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WA}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_whatsapp}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_whatsapp_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TW]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TW}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_twitter}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_twitter_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_GP]" value="1" {xen:if {$preparedOption.option_value.ctSSB_GP}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_googleplus}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_googleplus_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_LI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_LI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_linkedin}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_linkedin_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_PIN]" value="1" {xen:if {$preparedOption.option_value.ctSSB_PIN}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_pinterest}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_pinterest_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_XI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_XI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_xing}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_xing_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_EM]" value="1" {xen:if {$preparedOption.option_value.ctSSB_EM}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_mail}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_mail_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tumblr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tumblr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FL]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FL}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_flattr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_flattr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_DS]" value="1" {xen:if {$preparedOption.option_value.ctSSB_DS}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_diaspora}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_diaspora_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_RD]" value="1" {xen:if {$preparedOption.option_value.ctSSB_RD}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_reddit}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_reddit_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_SU]" value="1" {xen:if {$preparedOption.option_value.ctSSB_SU}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_stumbleupon}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_stumbleupon_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_THR]" value="1" {xen:if {$preparedOption.option_value.ctSSB_THR}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_threema}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_threema_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Info]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Info}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_info}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_info_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Count]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Count}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_counts}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_counts_explain}</p>
+		</xen:disabled>
+
+	</xen:option>
+
+	<xen:html>
+		{xen:raw $editLink}
+		<input type="hidden" name="{$listedFieldName}" value="{$preparedOption.option_id}" />
+	</xen:html>
+
+</xen:checkboxunit>]]></template>
+    <template title="itm_ctSSB_enable_SideBar"><![CDATA[<xen:checkboxunit label="{$preparedOption.title}">
+	<xen:option name="{$fieldPrefix}[{$preparedOption.option_id}][enabled]" value="1" selected="{$preparedOption.option_value.enabled}" label="{xen:phrase itm_ctSSB_option_enable_SideBar}">
+	<xen:hint>{xen:phrase itm_ctSSB_option_enable_SideBar_explain}</xen:hint>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_facebook}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_facebook_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WA]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WA}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_whatsapp}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_whatsapp_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TW]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TW}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_twitter}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_twitter_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_GP]" value="1" {xen:if {$preparedOption.option_value.ctSSB_GP}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_googleplus}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_googleplus_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_LI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_LI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_linkedin}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_linkedin_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_PIN]" value="1" {xen:if {$preparedOption.option_value.ctSSB_PIN}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_pinterest}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_pinterest_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_XI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_XI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_xing}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_xing_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_EM]" value="1" {xen:if {$preparedOption.option_value.ctSSB_EM}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_mail}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_mail_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tumblr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tumblr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FL]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FL}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_flattr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_flattr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_DS]" value="1" {xen:if {$preparedOption.option_value.ctSSB_DS}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_diaspora}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_diaspora_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_RD]" value="1" {xen:if {$preparedOption.option_value.ctSSB_RD}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_reddit}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_reddit_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_SU]" value="1" {xen:if {$preparedOption.option_value.ctSSB_SU}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_stumbleupon}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_stumbleupon_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_THR]" value="1" {xen:if {$preparedOption.option_value.ctSSB_THR}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_threema}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_threema_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Info]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Info}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_info}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_info_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Count]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Count}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_counts}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_counts_explain}</p>
+		</xen:disabled>
+
+	</xen:option>
+
+	<xen:html>
+		{xen:raw $editLink}
+		<input type="hidden" name="{$listedFieldName}" value="{$preparedOption.option_id}" />
+	</xen:html>
+
+</xen:checkboxunit>]]></template>
+    <template title="itm_ctSSB_enable_xenMiG"><![CDATA[<xen:checkboxunit label="{$preparedOption.title}">
+	<xen:option name="{$fieldPrefix}[{$preparedOption.option_id}][enabled]" value="1" selected="{$preparedOption.option_value.enabled}" label="{xen:phrase itm_ctSSB_option_enable_xenMiG}">
+	<xen:hint>{xen:phrase itm_ctSSB_option_enable_xenMiG_explain}</xen:hint>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_facebook}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_facebook_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WA]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WA}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_whatsapp}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_whatsapp_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TW]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TW}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_twitter}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_twitter_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_GP]" value="1" {xen:if {$preparedOption.option_value.ctSSB_GP}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_googleplus}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_googleplus_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_LI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_LI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_linkedin}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_linkedin_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_PIN]" value="1" {xen:if {$preparedOption.option_value.ctSSB_PIN}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_pinterest}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_pinterest_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_XI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_XI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_xing}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_xing_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_EM]" value="1" {xen:if {$preparedOption.option_value.ctSSB_EM}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_mail}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_mail_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tumblr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tumblr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FL]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FL}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_flattr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_flattr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_DS]" value="1" {xen:if {$preparedOption.option_value.ctSSB_DS}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_diaspora}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_diaspora_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_RD]" value="1" {xen:if {$preparedOption.option_value.ctSSB_RD}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_reddit}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_reddit_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_SU]" value="1" {xen:if {$preparedOption.option_value.ctSSB_SU}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_stumbleupon}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_stumbleupon_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_THR]" value="1" {xen:if {$preparedOption.option_value.ctSSB_THR}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_threema}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_threema_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Info]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Info}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_info}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_info_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Count]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Count}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_counts}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_counts_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label>{xen:phrase option_itm_ctSSB_xenMiG_widget_orientation}</label>
+				<xen:select name="{$fieldPrefix}[{$preparedOption.option_id}][widgetOrient]" value="{xen:if $preparedOption.option_value.widgetOrient, $preparedOption.option_value.widgetOrient, 'horizontal'}" inputclass="autoSize">
+					<xen:option value="horizontal">{xen:phrase itm_ctSSB_orient_horizontal}</xen:option>
+					<xen:option value="vertical">{xen:phrase itm_ctSSB_orient_vertical}</xen:option>
+				</xen:select>
+			<p class="explain">{xen:phrase option_itm_ctSSB_xenMiG_widget_orientation_explain}</p>
+		</xen:disabled>
+
+	</xen:option>
+
+	<xen:html>
+		{xen:raw $editLink}
+		<input type="hidden" name="{$listedFieldName}" value="{$preparedOption.option_id}" />
+	</xen:html>
+
+</xen:checkboxunit>]]></template>
+    <template title="itm_ctSSB_enable_XFMG"><![CDATA[<xen:checkboxunit label="{$preparedOption.title}">
+	<xen:option name="{$fieldPrefix}[{$preparedOption.option_id}][enabled]" value="1" selected="{$preparedOption.option_value.enabled}" label="{xen:phrase itm_ctSSB_option_enable_XFMG}">
+	<xen:hint>{xen:phrase itm_ctSSB_option_enable_XFMG_explain}</xen:hint>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_facebook}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_facebook_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_WA]" value="1" {xen:if {$preparedOption.option_value.ctSSB_WA}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_whatsapp}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_whatsapp_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TW]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TW}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_twitter}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_twitter_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_GP]" value="1" {xen:if {$preparedOption.option_value.ctSSB_GP}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_googleplus}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_googleplus_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_LI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_LI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_linkedin}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_linkedin_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_PIN]" value="1" {xen:if {$preparedOption.option_value.ctSSB_PIN}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_pinterest}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_pinterest_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_XI]" value="1" {xen:if {$preparedOption.option_value.ctSSB_XI}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_xing}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_xing_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_EM]" value="1" {xen:if {$preparedOption.option_value.ctSSB_EM}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_mail}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_mail_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_TB]" value="1" {xen:if {$preparedOption.option_value.ctSSB_TB}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_tumblr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_tumblr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_FL]" value="1" {xen:if {$preparedOption.option_value.ctSSB_FL}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_flattr}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_flattr_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_DS]" value="1" {xen:if {$preparedOption.option_value.ctSSB_DS}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_diaspora}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_diaspora_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_RD]" value="1" {xen:if {$preparedOption.option_value.ctSSB_RD}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_reddit}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_reddit_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_SU]" value="1" {xen:if {$preparedOption.option_value.ctSSB_SU}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_stumbleupon}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_stumbleupon_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_THR]" value="1" {xen:if {$preparedOption.option_value.ctSSB_THR}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_threema}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_threema_explain}</p>
+		</xen:disabled>
+		
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_AT]" value="1" {xen:if {$preparedOption.option_value.ctSSB_AT}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_addthis}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_addthis_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Info]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Info}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_info}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_info_explain}</p>
+		</xen:disabled>
+
+		<xen:disabled>
+			<label><input type="checkbox" name="{$fieldPrefix}[{$preparedOption.option_id}][ctSSB_Count]" value="1" {xen:if {$preparedOption.option_value.ctSSB_Count}, 'checked="checked"'} /> {xen:phrase option_itm_ctSSB_counts}</label>
+			<p class="explain indented">{xen:phrase option_itm_ctSSB_counts_explain}</p>
+		</xen:disabled>
+
+	</xen:option>
+
+	<xen:html>
+		{xen:raw $editLink}
+		<input type="hidden" name="{$listedFieldName}" value="{$preparedOption.option_id}" />
+	</xen:html>
+
+</xen:checkboxunit>]]></template>
+  </admin_templates>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups>
+    <group group_id="itm_ctSSB" display_order="10000" debug_only="0"/>
+    <option option_id="itm_ctSSB_ResWidth" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="41"/>
+    </option>
+    <option option_id="itm_ctSSB_enable_SideBar" edit_format="template" data_type="array" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params>itm_ctSSB_enable_SideBar</edit_format_params>
+      <sub_options>enabled
+ctSSB_FB
+ctSSB_WA
+ctSSB_TW
+ctSSB_GP
+ctSSB_LI
+ctSSB_PIN
+ctSSB_XI
+ctSSB_EM
+ctSSB_TB
+ctSSB_FL
+ctSSB_DS
+ctSSB_RD
+ctSSB_SU
+ctSSB_THR
+ctSSB_AT
+ctSSB_Info
+ctSSB_Count</sub_options>
+      <relation group_id="itm_ctSSB" display_order="200"/>
+    </option>
+    <option option_id="itm_ctSSB_enable_XFMG" edit_format="template" data_type="array" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params>itm_ctSSB_enable_XFMG</edit_format_params>
+      <sub_options>enabled
+ctSSB_FB
+ctSSB_WA
+ctSSB_TW
+ctSSB_GP
+ctSSB_LI
+ctSSB_PIN
+ctSSB_XI
+ctSSB_EM
+ctSSB_TB
+ctSSB_FL
+ctSSB_DS
+ctSSB_RD
+ctSSB_SU
+ctSSB_THR
+ctSSB_AT
+ctSSB_Info
+ctSSB_Count</sub_options>
+      <relation group_id="itm_ctSSB" display_order="300"/>
+    </option>
+    <option option_id="itm_ctSSB_enable_ctaFT" edit_format="template" data_type="array" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params>itm_ctSSB_enable_ctaFT</edit_format_params>
+      <sub_options>enabled
+ctSSB_FB
+ctSSB_WA
+ctSSB_TW
+ctSSB_GP
+ctSSB_LI
+ctSSB_PIN
+ctSSB_XI
+ctSSB_EM
+ctSSB_TB
+ctSSB_FL
+ctSSB_DS
+ctSSB_RD
+ctSSB_SU
+ctSSB_THR
+ctSSB_AT
+ctSSB_Info
+ctSSB_Count</sub_options>
+      <relation group_id="itm_ctSSB" display_order="500"/>
+    </option>
+    <option option_id="itm_ctSSB_enable_sharePage" edit_format="template" data_type="array" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params>itm_ctSSB_enable_sharePage</edit_format_params>
+      <sub_options>enabled
+ctSSB_FB
+ctSSB_WA
+ctSSB_TW
+ctSSB_GP
+ctSSB_LI
+ctSSB_PIN
+ctSSB_XI
+ctSSB_EM
+ctSSB_TB
+ctSSB_FL
+ctSSB_DS
+ctSSB_RD
+ctSSB_SU
+ctSSB_THR
+ctSSB_AT
+ctSSB_Info
+ctSSB_Count</sub_options>
+      <relation group_id="itm_ctSSB" display_order="100"/>
+    </option>
+    <option option_id="itm_ctSSB_flattr_category" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="51"/>
+    </option>
+    <option option_id="itm_ctSSB_flattr_user" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="52"/>
+    </option>
+    <option option_id="itm_ctSSB_infoURL" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="31"/>
+    </option>
+    <option option_id="itm_ctSSB_insertCSS" edit_format="select" data_type="string" can_backup="1">
+      <default_value>min</default_value>
+      <edit_format_params>min={xen:phrase itm_ctSSB_insertCSS_min}
+com={xen:phrase itm_ctSSB_insertCSS_com}</edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="11"/>
+    </option>
+    <option option_id="itm_ctSSB_insertJS" edit_format="select" data_type="string" can_backup="1">
+      <default_value>min</default_value>
+      <edit_format_params>min={xen:phrase itm_ctSSB_insertJS_min}
+com={xen:phrase itm_ctSSB_insertJS_com}</edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="10"/>
+    </option>
+    <option option_id="itm_ctSSB_lang" edit_format="select" data_type="string" can_backup="1">
+      <default_value>de</default_value>
+      <edit_format_params>bg={xen:phrase itm_ctSSB_lang_bg}
+de={xen:phrase itm_ctSSB_lang_de}
+en={xen:phrase itm_ctSSB_lang_en}
+es={xen:phrase itm_ctSSB_lang_es}
+fi={xen:phrase itm_ctSSB_lang_fi}
+hr={xen:phrase itm_ctSSB_lang_hr}
+hu={xen:phrase itm_ctSSB_lang_hu}
+ja={xen:phrase itm_ctSSB_lang_ja}
+ko={xen:phrase itm_ctSSB_lang_ko}
+no={xen:phrase itm_ctSSB_lang_no}
+pl={xen:phrase itm_ctSSB_lang_pl}
+pt={xen:phrase itm_ctSSB_lang_pt}
+ro={xen:phrase itm_ctSSB_lang_ro}
+ru={xen:phrase itm_ctSSB_lang_ru}
+sk={xen:phrase itm_ctSSB_lang_sk}
+sl={xen:phrase itm_ctSSB_lang_sl}
+sr={xen:phrase itm_ctSSB_lang_sr}
+sv={xen:phrase itm_ctSSB_lang_sv}
+tr={xen:phrase itm_ctSSB_lang_tr}
+zh={xen:phrase itm_ctSSB_lang_zh}</edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="21"/>
+    </option>
+    <option option_id="itm_ctSSB_theme" edit_format="select" data_type="string" can_backup="1">
+      <default_value>standard</default_value>
+      <edit_format_params>standard={xen:phrase itm_ctSSB_theme_standard}
+grey={xen:phrase itm_ctSSB_theme_grey}
+white={xen:phrase itm_ctSSB_theme_white}</edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="12"/>
+    </option>
+    <option option_id="itm_ctSSB_xenMiG_widget" edit_format="template" data_type="array" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params>itm_ctSSB_enable_xenMiG</edit_format_params>
+      <sub_options>enabled
+ctSSB_FB
+ctSSB_WA
+ctSSB_TW
+ctSSB_GP
+ctSSB_LI
+ctSSB_PIN
+ctSSB_XI
+ctSSB_EM
+ctSSB_TB
+ctSSB_FL
+ctSSB_DS
+ctSSB_RD
+ctSSB_SU
+ctSSB_THR
+ctSSB_AT
+ctSSB_Info
+ctSSB_Count
+widgetOrient</sub_options>
+      <relation group_id="itm_ctSSB" display_order="400"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="itm_ctSSB_insertCSS_com" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[Complete]]></phrase>
+    <phrase title="itm_ctSSB_insertCSS_min" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[Minimal]]></phrase>
+    <phrase title="itm_ctSSB_insertJS_com" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[Complete]]></phrase>
+    <phrase title="itm_ctSSB_insertJS_min" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[Minimal]]></phrase>
+    <phrase title="itm_ctSSB_lang_bg" version_id="10160" version_string="1.16.0"><![CDATA[Bulgaria]]></phrase>
+    <phrase title="itm_ctSSB_lang_de" version_id="10160" version_string="1.16.0"><![CDATA[Germany]]></phrase>
+    <phrase title="itm_ctSSB_lang_en" version_id="10160" version_string="1.16.0"><![CDATA[English]]></phrase>
+    <phrase title="itm_ctSSB_lang_es" version_id="10160" version_string="1.16.0"><![CDATA[Spain]]></phrase>
+    <phrase title="itm_ctSSB_lang_fi" version_id="10160" version_string="1.16.0"><![CDATA[Finland]]></phrase>
+    <phrase title="itm_ctSSB_lang_hr" version_id="10160" version_string="1.16.0"><![CDATA[Croatia]]></phrase>
+    <phrase title="itm_ctSSB_lang_hu" version_id="10160" version_string="1.16.0"><![CDATA[Hungary]]></phrase>
+    <phrase title="itm_ctSSB_lang_ja" version_id="10160" version_string="1.16.0"><![CDATA[Japan]]></phrase>
+    <phrase title="itm_ctSSB_lang_ko" version_id="10160" version_string="1.16.0"><![CDATA[Korea]]></phrase>
+    <phrase title="itm_ctSSB_lang_no" version_id="10160" version_string="1.16.0"><![CDATA[Norway]]></phrase>
+    <phrase title="itm_ctSSB_lang_pl" version_id="10160" version_string="1.16.0"><![CDATA[Poland]]></phrase>
+    <phrase title="itm_ctSSB_lang_pt" version_id="10160" version_string="1.16.0"><![CDATA[Portugal]]></phrase>
+    <phrase title="itm_ctSSB_lang_ro" version_id="10160" version_string="1.16.0"><![CDATA[Romania]]></phrase>
+    <phrase title="itm_ctSSB_lang_ru" version_id="10160" version_string="1.16.0"><![CDATA[Russia]]></phrase>
+    <phrase title="itm_ctSSB_lang_sk" version_id="10160" version_string="1.16.0"><![CDATA[Slovakia]]></phrase>
+    <phrase title="itm_ctSSB_lang_sl" version_id="10160" version_string="1.16.0"><![CDATA[Slovenia]]></phrase>
+    <phrase title="itm_ctSSB_lang_sr" version_id="10160" version_string="1.16.0"><![CDATA[Bosnia and Herzegovina]]></phrase>
+    <phrase title="itm_ctSSB_lang_sv" version_id="10160" version_string="1.16.0"><![CDATA[Sweden]]></phrase>
+    <phrase title="itm_ctSSB_lang_tr" version_id="10160" version_string="1.16.0"><![CDATA[Turkey]]></phrase>
+    <phrase title="itm_ctSSB_lang_zh" version_id="10160" version_string="1.16.0"><![CDATA[China]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_ctaFT" version_id="101612" version_string="1.16.1"><![CDATA[Enable for CTA FT & Portal]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_ctaFT_explain" version_id="101612" version_string="1.16.1"><![CDATA[<i>EXPLAIN</i>]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_sharePage" version_id="101612" version_string="1.16.1"><![CDATA[Enable for Pages/Forums/Threads/Posts]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_sharePage_explain" version_id="101612" version_string="1.16.1"><![CDATA[<i>EXPLAIN</i>]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_SideBar" version_id="101612" version_string="1.16.1"><![CDATA[Enable in Sidebar]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_SideBar_explain" version_id="101612" version_string="1.16.1"><![CDATA[<i>EXPLAIN</i>]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_xenMiG" version_id="101612" version_string="1.16.1"><![CDATA[Enable for xenMiG Portal Widget]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_xenMiG_explain" version_id="101612" version_string="1.16.1"><![CDATA[<i>EXPLAIN</i>]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_XFMG" version_id="101612" version_string="1.16.1"><![CDATA[Enable Xenforo Media Gallery]]></phrase>
+    <phrase title="itm_ctSSB_option_enable_XFMG_explain" version_id="101612" version_string="1.16.1"><![CDATA[<i>EXPLAIN</i>]]></phrase>
+    <phrase title="itm_ctSSB_orient_horizontal" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[Horizontal]]></phrase>
+    <phrase title="itm_ctSSB_orient_vertical" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[Vertical]]></phrase>
+    <phrase title="itm_ctSSB_theme_grey" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[Grey]]></phrase>
+    <phrase title="itm_ctSSB_theme_standard" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[Standard]]></phrase>
+    <phrase title="itm_ctSSB_theme_white" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[White]]></phrase>
+    <phrase title="option_group_itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[[ITM] c't Shariff Buttons]]></phrase>
+    <phrase title="option_group_itm_ctSSB_description" version_id="10001" version_string="1.0.0"><![CDATA[Options for the new c't Shariff Social Buttons.]]></phrase>
+    <phrase title="option_itm_ctSSB_addthis" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show AddThis]]></phrase>
+    <phrase title="option_itm_ctSSB_addthis_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_counts" version_id="101612" version_string="1.16.1"><![CDATA[Show Counts]]></phrase>
+    <phrase title="option_itm_ctSSB_counts_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_diaspora" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Diaspora]]></phrase>
+    <phrase title="option_itm_ctSSB_diaspora_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_ctaFT" version_id="101612" version_string="1.16.1"><![CDATA[CTA Featured Threads & Portal]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_ctaFT_explain" version_id="101612" version_string="1.16.1"><![CDATA[]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_sharePage" version_id="101612" version_string="1.16.1"><![CDATA[Pages/Forums/Threads/Posts]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_sharePage_explain" version_id="101612" version_string="1.16.1"><![CDATA[]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_SideBar" version_id="101612" version_string="1.16.1"><![CDATA[Only Forum SideBar]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_SideBar_explain" version_id="101612" version_string="1.16.1"><![CDATA[]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_XFMG" version_id="101612" version_string="1.16.1"><![CDATA[Enable for XFMG]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_XFMG_explain" version_id="101612" version_string="1.16.1"><![CDATA[]]></phrase>
+    <phrase title="option_itm_ctSSB_facebook" version_id="101612" version_string="1.16.1"><![CDATA[Show Facebook]]></phrase>
+    <phrase title="option_itm_ctSSB_facebook_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_flattr" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Flattr]]></phrase>
+    <phrase title="option_itm_ctSSB_flattr_category" version_id="10231" version_string="1.23.1"><![CDATA[Flattr Category]]></phrase>
+    <phrase title="option_itm_ctSSB_flattr_category_explain" version_id="10231" version_string="1.23.1"><![CDATA[Category to be used for Flattr.]]></phrase>
+    <phrase title="option_itm_ctSSB_flattr_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_flattr_user" version_id="10231" version_string="1.23.1"><![CDATA[Flattr User]]></phrase>
+    <phrase title="option_itm_ctSSB_flattr_user_explain" version_id="10231" version_string="1.23.1"><![CDATA[User that receives Flattr donation.]]></phrase>
+    <phrase title="option_itm_ctSSB_googleplus" version_id="101612" version_string="1.16.1"><![CDATA[Show Google+]]></phrase>
+    <phrase title="option_itm_ctSSB_googleplus_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_info" version_id="101612" version_string="1.16.1"><![CDATA[Show Info Button]]></phrase>
+    <phrase title="option_itm_ctSSB_infoURL" version_id="10001" version_string="1.0.0"><![CDATA[Insert Info URL]]></phrase>
+    <phrase title="option_itm_ctSSB_infoURL_explain" version_id="101612" version_string="1.16.1"><![CDATA[Set the URL for the Info button. This works globally.]]></phrase>
+    <phrase title="option_itm_ctSSB_info_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_insertCSS" version_id="10001" version_string="1.0.0"><![CDATA[Insert CSS]]></phrase>
+    <phrase title="option_itm_ctSSB_insertCSS_explain" version_id="10231" version_string="1.23.1"><![CDATA[Choose .min.css if <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank">Font Awesome</a> is already included.]]></phrase>
+    <phrase title="option_itm_ctSSB_insertJS" version_id="10001" version_string="1.0.0"><![CDATA[Insert JS]]></phrase>
+    <phrase title="option_itm_ctSSB_insertJS_explain" version_id="10231" version_string="1.23.1"><![CDATA[Choose .min.js if <a href="https://github.com/jquery/jquery" target="_blank">jQuery</a> is already included.]]></phrase>
+    <phrase title="option_itm_ctSSB_lang" version_id="10160" version_string="1.16.0"><![CDATA[Set localisation]]></phrase>
+    <phrase title="option_itm_ctSSB_lang_explain" version_id="10160" version_string="1.16.0"><![CDATA[The localisation to use. Available: bg, de, en, es, fi, hr, hu, ja, ko, no, pl, pt, ro, ru, sk, sl, sr, sv, tr, zh]]></phrase>
+    <phrase title="option_itm_ctSSB_linkedin" version_id="101612" version_string="1.16.1"><![CDATA[Show LinkedIn]]></phrase>
+    <phrase title="option_itm_ctSSB_linkedin_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_mail" version_id="101612" version_string="1.16.1"><![CDATA[Show Email]]></phrase>
+    <phrase title="option_itm_ctSSB_mail_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_pinterest" version_id="101612" version_string="1.16.1"><![CDATA[Show Pinterest]]></phrase>
+    <phrase title="option_itm_ctSSB_pinterest_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_reddit" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Reddit]]></phrase>
+    <phrase title="option_itm_ctSSB_reddit_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_ResWidth" version_id="101615" version_string="1.16.2"><![CDATA[Responsive fixed width]]></phrase>
+    <phrase title="option_itm_ctSSB_ResWidth_explain" version_id="101615" version_string="1.16.2"><![CDATA[Set an fixed width for the buttons in the responsive view at share page and forum view. This work not for share buttons in the sidebar.<br />
+Set width in px (e.g. 62px).]]></phrase>
+    <phrase title="option_itm_ctSSB_stumbleupon" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Stumbleupon]]></phrase>
+    <phrase title="option_itm_ctSSB_stumbleupon_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_theme" version_id="10001" version_string="1.0.0"><![CDATA[Choose Button Theme]]></phrase>
+    <phrase title="option_itm_ctSSB_theme_explain" version_id="101612" version_string="1.16.1"><![CDATA[Set the theme for the buttons.]]></phrase>
+    <phrase title="option_itm_ctSSB_threema" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Threema]]></phrase>
+    <phrase title="option_itm_ctSSB_threema_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_tumblr" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Tumblr]]></phrase>
+    <phrase title="option_itm_ctSSB_tumblr_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_twitter" version_id="101612" version_string="1.16.1"><![CDATA[Show Twitter]]></phrase>
+    <phrase title="option_itm_ctSSB_twitter_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_whatsapp" version_id="101612" version_string="1.16.1"><![CDATA[Show WhatsApp]]></phrase>
+    <phrase title="option_itm_ctSSB_whatsapp_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+    <phrase title="option_itm_ctSSB_xenMiG_widget" version_id="101612" version_string="1.16.1"><![CDATA[xenMiG Portal Widget]]></phrase>
+    <phrase title="option_itm_ctSSB_xenMiG_widget_explain" version_id="10001" version_string="1.0.0"><![CDATA[]]></phrase>
+    <phrase title="option_itm_ctSSB_xenMiG_widget_orientation" version_id="101612" version_string="1.16.1"><![CDATA[Set Widget Orientation]]></phrase>
+    <phrase title="option_itm_ctSSB_xenMiG_widget_orientation_explain" version_id="101612" version_string="1.16.1"><![CDATA[]]></phrase>
+    <phrase title="option_itm_ctSSB_xing" version_id="101612" version_string="1.16.1"><![CDATA[Show Xing]]></phrase>
+    <phrase title="option_itm_ctSSB_xing_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <public_template_modifications>
+    <modification template="share_page.css" modification_key="InsertStyleProperties" description="Insert some Style Properties" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[<xen:if is="{xen:property enableResponsive}">]]></find>
+      <replace><![CDATA[$0
+<xen:if is="{$xenOptions.itm_ctSSB_ResWidth}">
+<xen:set var="$itm_ctSSB_ResWidth">{$xenOptions.itm_ctSSB_ResWidth}</xen:set>
+@media (max-width:{xen:property nonResponsiveMinWidth})
+{
+.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
+.Responsive .shariff .orientation-horizontal li {min-width: {$itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+}
+
+@media (max-width:{xen:property maxResponsiveWideWidth})
+{
+.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
+.Responsive .shariff .orientation-horizontal li {min-width: {$itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+}
+
+@media (max-width:{xen:property maxResponsiveMediumWidth})
+{
+.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
+.Responsive .shariff .orientation-horizontal li {min-width: {$itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+}
+
+@media (max-width:{xen:property maxResponsiveNarrowWidth})
+{
+.Responsive .sharePage {display: inline !important;}
+.Responsive .shariff .orientation-horizontal li {min-width: {$itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+}
+</xen:if>]]></replace>
+    </modification>
+    <modification template="cta_featuredthreads.css" modification_key="InsertStylePropertiesForCTA" description="Insert some Style Properties in CTA CSS" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[{xen:helper clearfix, '.ctaFtShare'}]]></find>
+      <replace><![CDATA[$0
+
+@media (max-width:{xen:property nonResponsiveMinWidth})
+{
+.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
+<xen:if is="{$xenOptions.itm_ctSSB_ResWidth}">
+    .Responsive .shariff .orientation-horizontal li {min-width: {$xenOptions.itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+</xen:if>
+.Responsive .shariff .orientation-horizontal li .share_text {display: block !important;}
+}
+
+@media (max-width:{xen:property maxResponsiveWideWidth})
+{
+.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
+<xen:if is="{$xenOptions.itm_ctSSB_ResWidth}">
+    .Responsive .shariff .orientation-horizontal li {min-width: {$xenOptions.itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+</xen:if>
+.Responsive .shariff .orientation-horizontal li .share_text {display: block !important;}
+}
+
+@media (max-width:{xen:property maxResponsiveMediumWidth})
+{
+.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
+<xen:if is="{$xenOptions.itm_ctSSB_ResWidth}">
+    .Responsive .shariff .orientation-horizontal li {min-width: {$xenOptions.itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+</xen:if>
+.Responsive .shariff .orientation-horizontal li .share_text {display: block !important;}
+}
+
+@media (max-width:{xen:property maxResponsiveNarrowWidth})
+{
+.Responsive .sharePage {display: inline !important;}
+<xen:if is="{$xenOptions.itm_ctSSB_ResWidth}">
+    .Responsive .shariff .orientation-horizontal li {min-width: {$xenOptions.itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+</xen:if>
+.Responsive .shariff .orientation-horizontal li .share_text {display: block !important;}
+}]]></replace>
+    </modification>
+    <modification template="cta_featuredthreads_list_item_share" modification_key="SetButtonsIntoCTAShareTemplate" description="Set Buttons into CTA Share Template" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[<xen:if is="{$xenOptions.tweet.enabled} AND {xen:property ctaFtEnableTwitter}">
+				<div class="ctaFtShareControls ctaFtTwitter">
+					<a href="https://twitter.com/share" class="twitter-share-button"
+						data-count="horizontal"
+						data-lang="{xen:helper twitterLang, $visitorLanguage.language_code}"
+						data-url="{$url}"
+						{xen:if {$featuredThread.title}, 'data-text="{xen:helper threadPrefix, $featuredThread, escaped}{$featuredThread.title}"'}
+						{xen:if {$xenOptions.tweet.via}, 'data-via="{$xenOptions.tweet.via}"'}
+						{xen:if {$xenOptions.tweet.related}, 'data-related="{$xenOptions.tweet.related}"'}>{xen:phrase tweet}</a>
+				</div>
+			</xen:if>
+			<xen:if is="{$xenOptions.plusone} AND {xen:property ctaFtEnableGoogle}">
+				<div class="ctaFtShareControls ctaFtGoogle">
+					<div class="g-plusone" data-size="medium" data-count="true" data-href="{$url}"></div>
+				</div>
+			</xen:if>
+			<xen:if is="{$xenOptions.facebookLike} AND {xen:property ctaFtEnableFacebook}">
+				<div class="ctaFtShareControls ctaFtFacebook">
+					<xen:container var="$facebookSdk">1</xen:container>
+					<fb:like href="{$url}" layout="button_count" action="{$xenOptions.facebookLikeAction}" font="trebuchet ms" colorscheme="{xen:property fbColorScheme}"></fb:like>
+				</div>
+			</xen:if>
+			<xen:if is="{$xenOptions.addThis.enabled} AND {xen:property ctaFtEnableAddThis}">
+				<div class="ctaFtShareControls ctaFtAddThis">
+					<div class="addthis_toolbox addthis_default_style"
+						addthis:url="{$url}"
+						addthis:title="{xen:helper threadPrefix, $featuredThread, escaped}{$featuredThread.title}">
+						<a class="addthis_counter addthis_pill_style"></a>
+					</div>
+					<script type="text/javascript">
+						if (!window.addthis)
+						{
+						 XenForo.loadJs("//s7.addthis.com/js/250/addthis_widget.js#domready=1{xen:if {$xenOptions.addThis.pubId}, '&pubid={xen:jsescape $xenOptions.addThis.pubId}'}");
+						}
+						else
+						{
+						 addthis.toolbox($('.addthis_toolbox').get());
+						}
+					</script>
+				</div>
+			</xen:if>
+			<xen:if is="{xen:property ctaFtEnableCustomShare}">
+				<xen:include template="cta_featuredthreads_list_item_sharecustom" />
+			</xen:if>]]></find>
+      <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_enable_ctaFT}">
+<div class="shariff" 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Count}, 'data-backend-url="js/itm/shariff/backend/"'} 
+data-url="{$url}" 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_FL}, 'data-flattr-category="{$xenOptions.itm_ctSSB_flattr_category}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_FL}, 'data-flattr-user="{$xenOptions.itm_ctSSB_flattr_user}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, 'data-mail-url="mailto:"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, 'data-mail-subject="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, 'data-mail-body="{$url}"'} 
+data-theme="{$xenOptions.itm_ctSSB_theme}" 
+{xen:if {$thread.title}, 'data-title="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'}
+data-lang="{$xenOptions.itm_ctSSB_lang}" 
+data-services="[
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_FB}, '&quot;facebook&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_WA}, ',&quot;whatsapp&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_TW}, ',&quot;twitter&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_GP}, ',&quot;googleplus&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_LI}, ',&quot;linkedin&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_PIN}, ',&quot;pinterest&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_XI}, ',&quot;xing&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_TB}, ',&quot;tumblr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_FL}, ',&quot;flattr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_DS}, ',&quot;diaspora&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_RD}, ',&quot;reddit&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_THR}, ',&quot;threema&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, ',&quot;mail&quot;'}
+{xen:if '{$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
+</div>
+<xen:else />
+$0
+</xen:if>]]></replace>
+    </modification>
+    <modification template="cta_featuredthreads_featured_list_item_share" modification_key="SetButtonsIntoCTATemplate" description="Set Buttons into CTA Template" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[<xen:if is="{$xenOptions.tweet.enabled} AND {xen:property ctaFtEnableTwitterPage}">
+				<div class="ctaFtShareControlsPage ctaFtTwitterPage">
+					<a href="https://twitter.com/share" class="twitter-share-button"
+						data-count="horizontal"
+						data-lang="{xen:helper twitterLang, $visitorLanguage.language_code}"
+						data-url="{$url}"
+						{xen:if {$featuredThread.title}, 'data-text="{xen:helper threadPrefix, $featuredThread, escaped}{$featuredThread.title}"'}
+						{xen:if {$xenOptions.tweet.via}, 'data-via="{$xenOptions.tweet.via}"'}
+						{xen:if {$xenOptions.tweet.related}, 'data-related="{$xenOptions.tweet.related}"'}>{xen:phrase tweet}</a>
+				</div>
+			</xen:if>
+			<xen:if is="{$xenOptions.plusone} AND {xen:property ctaFtEnableGooglePage}">
+				<div class="ctaFtShareControlsPage ctaFtGooglePage">
+					<div class="g-plusone" data-size="medium" data-count="true" data-href="{$url}"></div>
+				</div>
+			</xen:if>
+			<xen:if is="{$xenOptions.facebookLike} AND {xen:property ctaFtEnableFacebookPage}">
+				<div class="ctaFtShareControlsPage ctaFtFacebookPage">
+					<xen:container var="$facebookSdk">1</xen:container>
+					<fb:like href="{$url}" layout="button_count" action="{$xenOptions.facebookLikeAction}" font="trebuchet ms" colorscheme="{xen:property fbColorScheme}"></fb:like>
+				</div>
+			</xen:if>
+			<xen:if is="{$xenOptions.addThis.enabled} AND {xen:property ctaFtEnableAddThisPage}">
+				<div class="ctaFtShareControlsPage ctaFtAddThisPage">
+					<div class="addthis_toolbox addthis_default_style"
+						addthis:url="{$url}"
+						addthis:title="{xen:helper threadPrefix, $featuredThread, escaped}{$featuredThread.title}">
+						<a class="addthis_counter addthis_pill_style"></a>
+					</div>
+					<script type="text/javascript">
+						if (!window.addthis)
+						{
+						 XenForo.loadJs("//s7.addthis.com/js/250/addthis_widget.js#domready=1{xen:if {$xenOptions.addThis.pubId}, '&pubid={xen:jsescape $xenOptions.addThis.pubId}'}");
+						}
+						else
+						{
+						 addthis.toolbox($('.addthis_toolbox').get());
+						}
+					</script>
+				</div>
+			</xen:if>]]></find>
+      <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_enable_ctaFT}">
+<div class="shariff" 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Count}, 'data-backend-url="js/itm/shariff/backend/"'} 
+data-url="{$url}" 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_FL}, 'data-flattr-category="{$xenOptions.itm_ctSSB_flattr_category}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_FL}, 'data-flattr-user="{$xenOptions.itm_ctSSB_flattr_user}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, 'data-mail-url="mailto:"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, 'data-mail-subject="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, 'data-mail-body="{$url}"'} 
+data-theme="{$xenOptions.itm_ctSSB_theme}" 
+{xen:if {$thread.title}, 'data-title="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'}
+data-lang="{$xenOptions.itm_ctSSB_lang}" 
+data-services="[
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_FB}, '&quot;facebook&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_WA}, ',&quot;whatsapp&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_TW}, ',&quot;twitter&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_GP}, ',&quot;googleplus&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_LI}, ',&quot;linkedin&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_PIN}, ',&quot;pinterest&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_XI}, ',&quot;xing&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_TB}, ',&quot;tumblr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_FL}, ',&quot;flattr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_DS}, ',&quot;diaspora&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_RD}, ',&quot;reddit&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_THR}, ',&quot;threema&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_EM}, ',&quot;mail&quot;'}
+{xen:if '{$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
+{xen:if {$xenOptions.itm_ctSSB_enable_ctaFT.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
+</div>
+<xen:else />
+$0
+</xen:if>]]></replace>
+    </modification>
+    <modification template="xengallery_media_view_sidebar" modification_key="SetButtonsIntoTemplate" description="Set Buttons into XFMG Template" execution_order="10" enabled="1" action="preg_replace">
+      <find><![CDATA[#(<xen:hook name="sidebar_share_page_options">.*)(</xen:hook>)#sU]]></find>
+      <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_enable_XFMG}">
+<div class="shariff" 
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_Count}, 'data-backend-url="js/itm/shariff/backend/"'} 
+data-url="{$url}" 
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_FL}, 'data-flattr-category="{$xenOptions.itm_ctSSB_flattr_category}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_FL}, 'data-flattr-user="{$xenOptions.itm_ctSSB_flattr_user}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_EM}, 'data-mail-url="mailto:"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_EM}, 'data-mail-subject="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_EM}, 'data-mail-body="{$url}"'} 
+data-theme="{$xenOptions.itm_ctSSB_theme}" 
+data-orientation="vertical" 
+{xen:if {$thread.title}, 'data-title="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'}
+data-lang="{$xenOptions.itm_ctSSB_lang}" 
+data-services="[
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_FB}, '&quot;facebook&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_WA}, ',&quot;whatsapp&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_TW}, ',&quot;twitter&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_GP}, ',&quot;googleplus&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_LI}, ',&quot;linkedin&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_PIN}, ',&quot;pinterest&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_XI}, ',&quot;xing&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_TB}, ',&quot;tumblr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_FL}, ',&quot;flattr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_DS}, ',&quot;diaspora&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_RD}, ',&quot;reddit&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_THR}, ',&quot;threema&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_EM}, ',&quot;mail&quot;'}
+{xen:if '{$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
+{xen:if {$xenOptions.itm_ctSSB_enable_XFMG.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
+</div>
+<xen:else />
+$0
+</xen:if>]]></replace>
+    </modification>
+    <modification template="PAGE_CONTAINER" modification_key="SetCSSforAddOn" description="Insert CSS in Template" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[<!--XenForo_Require:CSS-->]]></find>
+      <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_insertCSS} == 'min'">
+  <link rel="stylesheet" href="styles/itm/shariff/shariff.min.css">
+<xen:else />
+  <link rel="stylesheet" href="styles/itm/shariff/shariff.complete.css">
+</xen:if>
+$0]]></replace>
+    </modification>
+    <modification template="sidebar_share_page" modification_key="SetIntoSidebarTemplate" description="Set Buttons into Sidebar" execution_order="10" enabled="1" action="preg_replace">
+      <find><![CDATA[#(<xen:hook name="sidebar_share_page_options">.*)(</xen:hook>)#sU]]></find>
+      <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_enable_SideBar}">
+<div class="shariff" 
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_Count}, 'data-backend-url="js/itm/shariff/backend/"'} 
+data-url="{$url}" 
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_FL}, 'data-flattr-category="{$xenOptions.itm_ctSSB_flattr_category}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_FL}, 'data-flattr-user="{$xenOptions.itm_ctSSB_flattr_user}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_EM}, 'data-mail-url="mailto:"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_EM}, 'data-mail-subject="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_EM}, 'data-mail-body="{$url}"'} 
+data-theme="{$xenOptions.itm_ctSSB_theme}" 
+data-orientation="vertical" 
+{xen:if {$thread.title}, 'data-title="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'}
+data-lang="{$xenOptions.itm_ctSSB_lang}" 
+data-services="[
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_FB}, '&quot;facebook&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_WA}, ',&quot;whatsapp&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_TW}, ',&quot;twitter&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_GP}, ',&quot;googleplus&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_LI}, ',&quot;linkedin&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_PIN}, ',&quot;pinterest&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_XI}, ',&quot;xing&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_TB}, ',&quot;tumblr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_FL}, ',&quot;flattr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_DS}, ',&quot;diaspora&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_RD}, ',&quot;reddit&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_THR}, ',&quot;threema&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_EM}, ',&quot;mail&quot;'}
+{xen:if '{$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
+{xen:if {$xenOptions.itm_ctSSB_enable_SideBar.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
+</div>
+<xen:else />
+$0
+</xen:if>]]></replace>
+    </modification>
+    <modification template="PAGE_CONTAINER" modification_key="SetJSforAddOn" description="Insert JS in Template" execution_order="11" enabled="1" action="str_replace">
+      <find><![CDATA[<xen:include template="page_container_js_body" />]]></find>
+      <replace><![CDATA[$0
+<xen:if is="{$xenOptions.itm_ctSSB_insertJS} == 'min'">
+  <script src="js/itm/shariff/shariff.min.js"></script>
+<xen:else />
+  <script src="js/itm/shariff/shariff.complete.js"></script>
+</xen:if>]]></replace>
+    </modification>
+    <modification template="xenmig_portal_widget_share_page.css" modification_key="SetResponsiveToShareTemplate" description="Set Responsive Buttons into xenMiG Share Widget" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[</xen:if>]]></find>
+      <replace><![CDATA[$0
+
+<xen:if is="{xen:property enableResponsive}">
+<xen:if is="{$xenOptions.itm_ctSSB_ResWidth} AND {$xenOptions.itm_ctSSB_xenMiG_widget.widgetOrient} == 'horizontal' ">
+<xen:set var="$itm_ctSSB_ResWidth">{$xenOptions.itm_ctSSB_ResWidth}</xen:set>
+@media (max-width:{xen:property nonResponsiveMinWidth})
+{
+.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
+.Responsive .shariff .orientation-horizontal li {min-width: {$itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+}
+
+@media (max-width:{xen:property maxResponsiveWideWidth})
+{
+.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
+.Responsive .shariff .orientation-horizontal li {min-width: {$itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+}
+
+@media (max-width:{xen:property maxResponsiveMediumWidth})
+{
+.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
+.Responsive .shariff .orientation-horizontal li {min-width: {$itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+}
+
+@media (max-width:{xen:property maxResponsiveNarrowWidth})
+{
+.Responsive .sharePage {display: inline !important;}
+.Responsive .shariff .orientation-horizontal li {min-width: {$itm_ctSSB_ResWidth} !important; -webkit-flex: none !important; -ms-flex: none !important; flex: none !important;}
+}
+</xen:if>
+</xen:if>]]></replace>
+    </modification>
+    <modification template="share_page" modification_key="SetToSharePage" description="Set Buttons into Template" execution_order="10" enabled="1" action="preg_replace">
+      <find><![CDATA[#(<xen:hook name="share_page_options">.*)(</xen:hook>)#sU]]></find>
+      <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_enable_sharePage}">
+<div class="shariff" 
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_Count}, 'data-backend-url="js/itm/shariff/backend/"'} 
+data-url="{$url}" 
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_FL}, 'data-flattr-category="{$xenOptions.itm_ctSSB_flattr_category}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_FL}, 'data-flattr-user="{$xenOptions.itm_ctSSB_flattr_user}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_EM}, 'data-mail-url="mailto:"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_EM}, 'data-mail-subject="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'} 
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_EM}, 'data-mail-body="{$url}"'} 
+data-theme="{$xenOptions.itm_ctSSB_theme}" 
+{xen:if {$thread.title}, 'data-title="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'}
+data-lang="{$xenOptions.itm_ctSSB_lang}" 
+data-services="[
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_FB}, '&quot;facebook&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_WA}, ',&quot;whatsapp&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_TW}, ',&quot;twitter&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_GP}, ',&quot;googleplus&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_LI}, ',&quot;linkedin&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_PIN}, ',&quot;pinterest&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_XI}, ',&quot;xing&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_TB}, ',&quot;tumblr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_FL}, ',&quot;flattr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_DS}, ',&quot;diaspora&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_RD}, ',&quot;reddit&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_THR}, ',&quot;threema&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_EM}, ',&quot;mail&quot;'}
+{xen:if '{$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
+{xen:if {$xenOptions.itm_ctSSB_enable_sharePage.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
+</div>
+<xen:else />
+$0
+</xen:if>]]></replace>
+    </modification>
+    <modification template="xenmig_portal_widget_share_page" modification_key="SetToSharePageWidget" description="Set Buttons into xenMiG Share Widget" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[<xen:if is="{$xenOptions.tweet.enabled}">
+			<div class="tweet shareControl">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"
+				data-lang="{xen:helper twitterLang, $visitorLanguage.language_code}"
+				data-url="{$url}"
+				{xen:if {$xenOptions.tweet.via}, 'data-via="{$xenOptions.tweet.via}"'}
+				{xen:if {$xenOptions.tweet.related}, 'data-related="{$xenOptions.tweet.related}"'}>{xen:phrase tweet}</a>
+			</div>
+		</xen:if>       
+		<xen:if is="{$xenOptions.facebookLike}">
+			<div class="facebookLike shareControl">
+				<xen:container var="$facebookSdk">1</xen:container>
+				<div class="fb-like" data-href="{$url}" data-layout="button_count" data-action="{$xenOptions.facebookLikeAction}" data-font="trebuchet ms" data-colorscheme="{xen:property fbColorScheme}"></div>
+			</div>
+		</xen:if>
+		<xen:if is="{$xenOptions.plusone}">
+			<div class="plusone shareControl">
+				<div class="g-plusone" data-size="medium" data-count="true" data-href="{$url}"></div>
+			</div>
+		</xen:if>]]></find>
+      <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_xenMiG_widget}">
+<div class="shariff" 
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_Count}, 'data-backend-url="js/itm/shariff/backend/"'} 
+data-url="{$url}" 
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_FL}, 'data-flattr-category="{$xenOptions.itm_ctSSB_flattr_category}"'} 
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_FL}, 'data-flattr-user="{$xenOptions.itm_ctSSB_flattr_user}"'} 
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_EM}, 'data-mail-url="mailto:"'} 
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_EM}, 'data-mail-subject="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'} 
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_EM}, 'data-mail-body="{$url}"'} 
+data-theme="{$xenOptions.itm_ctSSB_theme}" 
+data-orientation="{$xenOptions.itm_ctSSB_xenMiG_widget.widgetOrient}" 
+{xen:if {$thread.title}, 'data-title="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'}
+data-services="[
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_FB}, '&quot;facebook&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_WA}, ',&quot;whatsapp&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_TW}, ',&quot;twitter&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_GP}, ',&quot;googleplus&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_LI}, ',&quot;linkedin&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_PIN}, ',&quot;pinterest&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_XI}, ',&quot;xing&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_TB}, ',&quot;tumblr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_FL}, ',&quot;flattr&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_DS}, ',&quot;diaspora&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_RD}, ',&quot;reddit&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_SU}, ',&quot;stumbleupon&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_THR}, ',&quot;threema&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_AT}, ',&quot;addthis&quot;'}
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_EM}, ',&quot;mail&quot;'}
+{xen:if '{$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_Info} AND {$xenOptions.itm_ctSSB_infoURL}', ',&quot;info&quot;'}]" 
+{xen:if {$xenOptions.itm_ctSSB_xenMiG_widget.ctSSB_Info}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
+</div>
+<xen:else />
+$0
+</xen:if>]]></replace>
+    </modification>
+  </public_template_modifications>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
