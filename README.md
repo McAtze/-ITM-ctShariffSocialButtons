@@ -4,7 +4,7 @@ These AddOn used the Project ["Shariff"] (https://github.com/heiseonline/shariff
 
 There are no more Templateedits or Changes, you can handle it from the options. It is easy to include it in every Xenforo Community.
 
-If you wanna thank me for this add-on just [PayPal.Me](paypal.me/itmaku) ..
+If you wanna thank me for this add-on just [PayPal.Me](https://www.paypal.me/itmaku) ..
 
 ## Install in Xenforo
 1. Download the [latest release](https://github.com/McAtze/-ITM-ctShariffSocialButtons/releases/latest)
