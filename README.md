@@ -4,10 +4,12 @@ These AddOn used the Project ["Shariff"] (https://github.com/heiseonline/shariff
 
 There are no more Templateedits or Changes, you can handle it from the options. It is easy to include it in every Xenforo Community.
 
+If you wanna thank me for this add-on just [PayPal.Me](paypal.me/itmaku) ..
+
 ## Install in Xenforo
 1. Download the [latest release](https://github.com/McAtze/-ITM-ctShariffSocialButtons/releases/latest)
 2. Unzip the files and upload the files in the upload folder.
-  * Since v1.24.0 it is no longer necessary to upload the files for update the add-on. The files are just needed for the counter backend.
+  * Since v1.24.0 it is no longer necessary to upload the files for updating the add-on. The files are just needed for the counter backend.
   * If you're had a new installation, you should upload all files.
 3. Install the .xml in the AdminCP of your Xenforo.
 4. If you want to use the counter in the buttons you should enable it in options and enter your domain in `js/itm/shariff/backend/shariff.json`.
