@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<language title="Deutsch [Du]" date_format="j. F Y" time_format="H:i" decimal_point="," thousands_separator="." language_code="de-DE" text_direction="LTR" addon_id="itm_ctSSB">
+<language title="Deutsch [Sie]" date_format="j. F Y" time_format="H:i" decimal_point="," thousands_separator="." language_code="de-DE" text_direction="LTR" addon_id="itm_ctSSB">
   <phrase title="itm_ctSSB_insertCSS_com" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Komplett]]></phrase>
   <phrase title="itm_ctSSB_insertCSS_min" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Minimal]]></phrase>
   <phrase title="itm_ctSSB_insertJS_com" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Komplett]]></phrase>
