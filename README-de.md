@@ -7,7 +7,7 @@ Wenn sich jemand für die Arbeit bedanken möchte, kann er mich gerne bei [PayPa
 ## Installieren in Xenforo
 1. Den [aktuellsten Release](https://github.com/McAtze/-ITM-ctShariffSocialButtons/releases/latest) herunterladen.
 2. Dateien entpacken und in den Forenroot hochladen.
-  * Seit der v1.24.0 ist es nicht mehr nötig alle Dateien hochzuladen. Nur für die Zähler der Button ist der 'js/itm/shariff/backend/' Ordner notwendig.
+  * Seit der v1.24.0 ist es nicht mehr nötig alle Dateien hochzuladen. Nur für die Zähler der Button ist der `js/itm/shariff/backend/` Ordner notwendig.
   * Wenn das AddOn nur aktualisiert wird, ist es nicht notwendig die Ordner hochzuladen.
 3. Die XML im AdminCP installieren
 4. Wenn die Zähler in den Buttons genutzt werden sollen, muss dies in den Einstellungen aktiviert werden und in der Datei `js/itm/shariff/backend/shariff.json` muss die dazugehörige Domain eingetragen werden.
