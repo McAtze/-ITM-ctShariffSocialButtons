@@ -1202,9 +1202,9 @@ $0
     <modification template="PAGE_CONTAINER" modification_key="SetCSSforAddOn" description="Insert CSS in Template" execution_order="10" enabled="1" action="str_replace">
       <find><![CDATA[<!--XenForo_Require:CSS-->]]></find>
       <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_insertCSS} == 'min'">
-  <link rel="stylesheet" href="//cdn.it-maku.com/git/shariff-1.24.0/shariff.min.css" />
+  <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.min.css" />
 <xen:else />
-  <link rel="stylesheet" href="//cdn.it-maku.com/git/shariff-1.24.0/shariff.complete.css" />
+  <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.complete.css" />
 </xen:if>
 $0]]></replace>
     </modification>
@@ -1253,9 +1253,9 @@ $0
       <find><![CDATA[<xen:include template="page_container_js_body" />]]></find>
       <replace><![CDATA[$0
 <xen:if is="{$xenOptions.itm_ctSSB_insertJS} == 'min'">
-  <script src="//cdn.it-maku.com/git/shariff-1.24.0/shariff.min.js" /"></script>
+  <script src="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.min.js" /"></script>
 <xen:else />
-  <script src="//cdn.it-maku.com/git/shariff-1.24.0/shariff.complete.js" /"></script>
+  <script src="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.complete.js" /"></script>
 </xen:if>]]></replace>
     </modification>
     <modification template="xenmig_portal_widget_share_page.css" modification_key="SetResponsiveToShareTemplate" description="Set Responsive Buttons into xenMiG Share Widget" execution_order="10" enabled="1" action="str_replace">
