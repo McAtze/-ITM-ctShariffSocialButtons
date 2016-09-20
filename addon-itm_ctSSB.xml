@@ -785,12 +785,19 @@ $0
     </modification>
     <modification template="PAGE_CONTAINER" modification_key="SetCSSforAddOn" description="Insert CSS in Template" execution_order="10" enabled="1" action="str_replace">
       <find><![CDATA[<!--XenForo_Require:CSS-->]]></find>
+<<<<<<< HEAD
       <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_insertCSS} == 'loc' && {$xenOptions.itm_ctSSB_insertCSS_local}">
    <link rel="stylesheet" href="{$xenOptions.itm_ctSSB_insertCSS_local}" />
 <xen:elseif is="{$xenOptions.itm_ctSSB_insertCSS} == 'min'" />
    <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.min.css" />
 <xen:else />
    <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.complete.css" />
+=======
+      <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_insertCSS} == 'min'">
+  <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.min.css" />
+<xen:else />
+  <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.complete.css" />
+>>>>>>> origin/master
 </xen:if>
 $0]]></replace>
     </modification>
@@ -815,12 +822,19 @@ $0
     <modification template="PAGE_CONTAINER" modification_key="SetJSforAddOn" description="Insert JS in Template" execution_order="11" enabled="1" action="str_replace">
       <find><![CDATA[<xen:include template="page_container_js_body" />]]></find>
       <replace><![CDATA[$0
+<<<<<<< HEAD
 <xen:if is="{$xenOptions.itm_ctSSB_insertJS} == 'loc' && {$xenOptions.itm_ctSSB_insertJS_local}">
    <script src="{$xenOptions.itm_ctSSB_insertJS_local}" /"></script>
 <xen:elseif is="{$xenOptions.itm_ctSSB_insertJS} == 'min'" />
    <script src="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.min.js" /"></script>
 <xen:else />
    <script src="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.complete.js" /"></script>
+=======
+<xen:if is="{$xenOptions.itm_ctSSB_insertJS} == 'min'">
+  <script src="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.min.js" /"></script>
+<xen:else />
+  <script src="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.complete.js" /"></script>
+>>>>>>> origin/master
 </xen:if>]]></replace>
     </modification>
     <modification template="xenmig_portal_widget_share_page.css" modification_key="SetResponsiveToShareTemplate" description="Set Responsive Buttons into xenMiG Share Widget" execution_order="10" enabled="1" action="str_replace">
