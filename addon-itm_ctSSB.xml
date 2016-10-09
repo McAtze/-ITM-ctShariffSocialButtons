@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="1.24.0.1" version_id="1024001" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="1.24.0.2" version_id="1024003" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -658,8 +658,8 @@ Set width in px (e.g. 62px).]]></phrase>
 		{xen:if {$xenOptions.itm_ctSSB_enable_TH}, ',&quot;threema&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_WB}, ',&quot;weibo&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_TWB}, ',&quot;tencent-weibo&quot;'}
-		{xen:if {$xenOptions.itm_ctSSB_enable_QZ}, ',&quot;addthis&quot;'}
-		{xen:if {$xenOptions.itm_ctSSB_enable_AT}, ',&quot;qzone&quot;'}
+		{xen:if {$xenOptions.itm_ctSSB_enable_QZ}, ',&quot;qzone&quot;'}
+		{xen:if {$xenOptions.itm_ctSSB_enable_AT}, ',&quot;addthis&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_EM}, ',&quot;mail&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_infoURL}, ',&quot;info&quot;'}]" 
 	{xen:if {$xenOptions.itm_ctSSB_infoURL}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
@@ -683,7 +683,7 @@ Set width in px (e.g. 62px).]]></phrase>
 		{xen:if {$xenOptions.itm_ctSSB_enable_TW}, ',&quot;twitter&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_GP}, ',&quot;googleplus&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_LI}, ',&quot;linkedin&quot;'}
-		{xen:if {$xenOptions.itm_ctSSB_enable_PIN}, ',&quot;pinterest&quot;'}
+		{xen:if {$xenOptions.itm_ctSSB_enable_PI}, ',&quot;pinterest&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_XI}, ',&quot;xing&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_TB}, ',&quot;tumblr&quot;'}
 		{xen:if '{$xenOptions.itm_ctSSB_enable_FL} AND {$xenOptions.itm_ctSSB_enable_FL.flaCat} AND {$xenOptions.itm_ctSSB_enable_FL.flaUs}', ',&quot;flattr&quot;'}
@@ -726,10 +726,10 @@ Set width in px (e.g. 62px).]]></phrase>
 		{xen:if {$xenOptions.itm_ctSSB_enable_RD}, ',&quot;reddit&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_SU}, ',&quot;stumbleupon&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_THR}, ',&quot;threema&quot;'}
-		{xen:if {$xenOptions.itm_ctSSB_enable_AT}, ',&quot;addthis&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_WB}, ',&quot;weibo&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_TWB}, ',&quot;tencent-weibo&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_QZ}, ',&quot;qzone&quot;'}
+		{xen:if {$xenOptions.itm_ctSSB_enable_AT}, ',&quot;addthis&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_EM}, ',&quot;mail&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_infoURL}, ',&quot;info&quot;'}]" 
 	{xen:if {$xenOptions.itm_ctSSB_infoURL}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}>
