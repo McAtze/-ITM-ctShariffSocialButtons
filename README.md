@@ -9,10 +9,10 @@ If you wanna thank me for this add-on just [PayPal.Me](https://www.paypal.me/itm
 ## Install in Xenforo
 1. Download the [latest release](https://github.com/McAtze/-ITM-ctShariffSocialButtons/releases/latest)
 2. Unzip the files and upload the files in the upload folder.
-  * Since v1.24.0 it is no longer necessary to upload the files for updating the add-on. The `library/js/itm/shariff/backend/` folder ist just needed for the service counters.
+  * Since v1.24.0 it is no longer necessary to upload the files for updating the add-on. The `/js/itm/ctSSB/backend/` folder ist just needed for the service counters.
   * If you're had a new installation, you should upload all files.
 3. Install the .xml in the AdminCP of your Xenforo.
-4. If you want to use the counter in the buttons you should enable it in options and enter your domain in `library/js/itm/shariff/backend/shariff.json`.
+4. If you want to use the counter in the buttons you should enable it in options and enter your domain in `/js/itm/ctSSB/backend/index.php`. For more information visit (https://github.com/heiseonline/shariff-backend-php)
 
 ## Support and Suggestions
 * [XenDACH Ressourcen](http://www.xendach.de/resources/itm-ct-shariff-social-buttons.248/)
