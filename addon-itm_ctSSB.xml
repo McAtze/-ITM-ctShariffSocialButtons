@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="1.24.0.2" version_id="1024003" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="1.24.1" version_id="1024100" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -788,9 +788,9 @@ $0
       <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_insertCSS} == 'loc' && {$xenOptions.itm_ctSSB_insertCSS_local}">
    <link rel="stylesheet" href="{$xenOptions.itm_ctSSB_insertCSS_local}" />
 <xen:elseif is="{$xenOptions.itm_ctSSB_insertCSS} == 'min'" />
-   <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.min.css" />
+   <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.1/shariff.min.css" />
 <xen:else />
-   <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.complete.css" />
+   <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-1.24.1/shariff.complete.css" />
 </xen:if>
 $0]]></replace>
     </modification>
@@ -818,9 +818,9 @@ $0
 <xen:if is="{$xenOptions.itm_ctSSB_insertJS} == 'loc' && {$xenOptions.itm_ctSSB_insertJS_local}">
    <script src="{$xenOptions.itm_ctSSB_insertJS_local}" /"></script>
 <xen:elseif is="{$xenOptions.itm_ctSSB_insertJS} == 'min'" />
-   <script src="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.min.js" /"></script>
+   <script src="//maxcdn.it-maku.com/git/shariff-1.24.1/shariff.min.js" /"></script>
 <xen:else />
-   <script src="//maxcdn.it-maku.com/git/shariff-1.24.0/shariff.complete.js" /"></script>
+   <script src="//maxcdn.it-maku.com/git/shariff-1.24.1/shariff.complete.js" /"></script>
 </xen:if>]]></replace>
     </modification>
     <modification template="xenmig_portal_widget_share_page.css" modification_key="SetResponsiveToShareTemplate" description="Set Responsive Buttons into xenMiG Share Widget" execution_order="10" enabled="1" action="str_replace">

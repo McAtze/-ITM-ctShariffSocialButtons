@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.24.1
+
+## v1.24.0.2
+
+## v1.24.0
+
 ## v1.0.2 (2015-06-21)
   * fixed directory for backend to show counter
 
