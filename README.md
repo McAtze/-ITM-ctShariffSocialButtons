@@ -1,6 +1,6 @@
 # -ITM- c't Shariff Social Buttons
 
-These AddOn used the Project ["Shariff"] (https://github.com/heiseonline/shariff) by heiseonline and include it to the Xenforo Software.
+These AddOn used the Project [Shariff] (https://github.com/heiseonline/shariff) by heiseonline and include it to the Xenforo Software.
 
 There are no more Templateedits or Changes, you can handle it from the options. It is easy to include it in every Xenforo Community.
 
