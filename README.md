@@ -23,7 +23,7 @@ Xenforo AddOns that will work with these Share Options:
   * [Xenforo Resource Manager](https://xenforo.com/purchase/)
   * [Showcase](http://xenaddons.com/store-products/showcase/)
   * [sonnb - XenGallery](http://www.sonnb.com/purchases/sonnb-xengallery-xenforo-gallery.1/)
-  * ~~[xenMiG Portal](http://www.xendach.de/resources/xenmig-portal.228/)~~
+  * ~~[xenMiG Portal](http://www.xendach.de/resources/xenmig-portal.228/)
 
 ## Screenshots
 #### Options in ACP
@@ -32,7 +32,7 @@ Xenforo AddOns that will work with these Share Options:
 ![Options#3 in ACP](https://maxcdn.it-maku.com/git/shariff/Options-3.png)
 #### Buttons in CTA-FT,XFMG and Threads
 ![Options#4 in ACP](https://maxcdn.it-maku.com/git/shariff/Below-Thread.png)
-![Options#5 in ACP](https://maxcdn.it-maku.com/git/shariff/CTA-Featured-Thread.png)
+![Options#5 in ACP](https://maxcdn.it-maku.com/git/shariff/CTA-Featured-Threads.png)
 ![Options#6 in ACP](https://maxcdn.it-maku.com/git/shariff/XFMG-Image.png)
 #### Buttons in Sidebar
 ![Buttons in Sidebar](https://maxcdn.it-maku.com/git/shariff/Sidebar.png)
