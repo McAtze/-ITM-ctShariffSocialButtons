@@ -1,4 +1,5 @@
 # -ITM- c't Shariff Social Buttons
+[![StyleCI](https://styleci.io/repos/63004175/shield?branch=master)](https://styleci.io/repos/63004175)
 
 These AddOn used the Project ["Shariff"](https://github.com/heiseonline/shariff) by heiseonline and include it to the Xenforo Software.
 
