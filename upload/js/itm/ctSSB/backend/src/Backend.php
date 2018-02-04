@@ -26,7 +26,7 @@ class Backend
             array_push($domains, $config['domain']);
         }
 
-        $clientOptions = [];
+        $clientOptions = array();
         if (isset($config['client'])) {
             $clientOptions = $config['client'];
         }

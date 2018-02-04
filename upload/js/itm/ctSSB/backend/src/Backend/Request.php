@@ -24,9 +24,6 @@ abstract class Request
         $this->client = $client;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function filterResponse($content)
     {
         return $content;
