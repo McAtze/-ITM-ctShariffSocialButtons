@@ -23,7 +23,7 @@ Xenforo AddOns that will work with these Share Options:
   * [Xenforo Resource Manager](https://xenforo.com/purchase/)
   * [Showcase](http://xenaddons.com/store-products/showcase/)
   * [sonnb - XenGallery](http://www.sonnb.com/purchases/sonnb-xengallery-xenforo-gallery.1/)
-  * ~~[xenMiG Portal](http://www.xendach.de/resources/xenmig-portal.228/)
+  * ~~[xenMiG Portal](http://www.xendach.de/resources/xenmig-portal.228/)~~
 
 ## Screenshots
 #### Options in ACP
