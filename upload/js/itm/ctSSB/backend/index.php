@@ -3,17 +3,24 @@
 require_once __DIR__.'/vendor/autoload.php';
 
 use Heise\Shariff\Backend;
-use Zend\Config\Reader\Json;
 
+/**
+ * Demo Application using Shariff Backend
+ */
 class Application
 {
+    /**
+     * Sample configuration
+     *
+     * @var array
+     */
     private static $configuration = [
         'cache' => [
             'ttl' => 60
         ],
         'domains' => [
-            'demo.it-maku.com',
-            'it-maku.com'
+            'www.heise.de',
+            'www.ct.de'
         ],
         'services' => [
             'GooglePlus',
@@ -24,12 +31,9 @@ class Application
             'Flattr',
             'Pinterest',
             'Xing',
-            'AddThis'
-        ],
-        'Facebook' => [
-      		'app_id' => '346819142103427',
-      		'secret' => '1085ebfaad7edb32e56b9dde3389a0e3'
-    	]
+            'AddThis',
+            'Vk'
+        ]
     ];
 
     public static function run()
