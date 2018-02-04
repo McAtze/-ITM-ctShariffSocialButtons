@@ -62,22 +62,6 @@ class BackendManager
     }
 
     /**
-     * @param string $url
-     *
-     * @return bool
-     */
-    private function isValidDomain($url)
-    {
-        if (!empty($this->domains)) {
-            $parsed = parse_url($url);
-
-            return in_array($parsed['host'], $this->domains, true);
-        }
-
-        return true;
-    }
-
-    /**
      * @param LoggerInterface $logger
      */
     public function setLogger(LoggerInterface $logger = null)
@@ -92,7 +76,6 @@ class BackendManager
      */
     public function get($url)
     {
-
         // Changing configuration invalidates the cache
         $cacheKey = md5($url.$this->baseCacheKey);
 
@@ -129,7 +112,8 @@ class BackendManager
             } else {
                 try {
                     $content = $service->filterResponse($results[$i]->getBody()->getContents());
-                    $counts[$service->getName()] = (int) $service->extractCount(json_decode($content, true));
+                    $json = json_decode($content, true);
+                    $counts[$service->getName()] = is_array($json) ? (int) $service->extractCount($json) : 0;
                 } catch (\Exception $e) {
                     if ($this->logger !== null) {
                         $this->logger->warning($e->getMessage(), ['exception' => $e]);
@@ -142,5 +126,21 @@ class BackendManager
         $this->cache->setItem($cacheKey, json_encode($counts));
 
         return $counts;
+    }
+
+    /**
+     * @param string $url
+     *
+     * @return bool
+     */
+    private function isValidDomain($url)
+    {
+        if (!empty($this->domains)) {
+            $parsed = parse_url($url);
+
+            return in_array($parsed['host'], $this->domains, true);
+        }
+
+        return true;
     }
 }

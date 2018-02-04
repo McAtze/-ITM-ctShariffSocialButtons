@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
+class ComposerStaticInitc4a4f45fc513f3de9b4485e1010c0fb7
 {
     public static $files = array (
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
@@ -22,6 +22,7 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
         ),
         'I' => 
@@ -57,6 +58,10 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-cache/src',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
@@ -83,20 +88,11 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
         ),
     );
 
-    public static $prefixesPsr0 = array (
-        'P' => 
-        array (
-            'Psr\\Log\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/psr/log',
-            ),
-        ),
-    );
-
     public static $classMap = array (
         'Generic_Sniffs_Arrays_DisallowLongArraySyntaxSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Arrays/DisallowLongArraySyntaxSniff.php',
         'Generic_Sniffs_Arrays_DisallowShortArraySyntaxSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Arrays/DisallowShortArraySyntaxSniff.php',
         'Generic_Sniffs_Classes_DuplicateClassNameSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Classes/DuplicateClassNameSniff.php',
+        'Generic_Sniffs_Classes_OpeningBraceSameLineSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Classes/OpeningBraceSameLineSniff.php',
         'Generic_Sniffs_CodeAnalysis_EmptyStatementSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/CodeAnalysis/EmptyStatementSniff.php',
         'Generic_Sniffs_CodeAnalysis_ForLoopShouldBeWhileLoopSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/CodeAnalysis/ForLoopShouldBeWhileLoopSniff.php',
         'Generic_Sniffs_CodeAnalysis_ForLoopWithTestFunctionCallSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/CodeAnalysis/ForLoopWithTestFunctionCallSniff.php',
@@ -136,9 +132,11 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
         'Generic_Sniffs_NamingConventions_CamelCapsFunctionNameSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/NamingConventions/CamelCapsFunctionNameSniff.php',
         'Generic_Sniffs_NamingConventions_ConstructorNameSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/NamingConventions/ConstructorNameSniff.php',
         'Generic_Sniffs_NamingConventions_UpperCaseConstantNameSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/NamingConventions/UpperCaseConstantNameSniff.php',
+        'Generic_Sniffs_PHP_BacktickOperatorSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/PHP/BacktickOperatorSniff.php',
         'Generic_Sniffs_PHP_CharacterBeforePHPOpeningTagSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/PHP/CharacterBeforePHPOpeningTagSniff.php',
         'Generic_Sniffs_PHP_ClosingPHPTagSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/PHP/ClosingPHPTagSniff.php',
         'Generic_Sniffs_PHP_DeprecatedFunctionsSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/PHP/DeprecatedFunctionsSniff.php',
+        'Generic_Sniffs_PHP_DisallowAlternativePHPTagsSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/PHP/DisallowAlternativePHPTagsSniff.php',
         'Generic_Sniffs_PHP_DisallowShortOpenTagSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/PHP/DisallowShortOpenTagSniff.php',
         'Generic_Sniffs_PHP_ForbiddenFunctionsSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/PHP/ForbiddenFunctionsSniff.php',
         'Generic_Sniffs_PHP_LowerCaseConstantSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/PHP/LowerCaseConstantSniff.php',
@@ -183,6 +181,7 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
         'GuzzleHttp\\PrepareBodyMiddleware' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php',
         'GuzzleHttp\\Promise\\AggregateException' => __DIR__ . '/..' . '/guzzlehttp/promises/src/AggregateException.php',
         'GuzzleHttp\\Promise\\CancellationException' => __DIR__ . '/..' . '/guzzlehttp/promises/src/CancellationException.php',
+        'GuzzleHttp\\Promise\\Coroutine' => __DIR__ . '/..' . '/guzzlehttp/promises/src/Coroutine.php',
         'GuzzleHttp\\Promise\\EachPromise' => __DIR__ . '/..' . '/guzzlehttp/promises/src/EachPromise.php',
         'GuzzleHttp\\Promise\\FulfilledPromise' => __DIR__ . '/..' . '/guzzlehttp/promises/src/FulfilledPromise.php',
         'GuzzleHttp\\Promise\\Promise' => __DIR__ . '/..' . '/guzzlehttp/promises/src/Promise.php',
@@ -191,6 +190,7 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
         'GuzzleHttp\\Promise\\RejectedPromise' => __DIR__ . '/..' . '/guzzlehttp/promises/src/RejectedPromise.php',
         'GuzzleHttp\\Promise\\RejectionException' => __DIR__ . '/..' . '/guzzlehttp/promises/src/RejectionException.php',
         'GuzzleHttp\\Promise\\TaskQueue' => __DIR__ . '/..' . '/guzzlehttp/promises/src/TaskQueue.php',
+        'GuzzleHttp\\Promise\\TaskQueueInterface' => __DIR__ . '/..' . '/guzzlehttp/promises/src/TaskQueueInterface.php',
         'GuzzleHttp\\Psr7\\AppendStream' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/AppendStream.php',
         'GuzzleHttp\\Psr7\\BufferStream' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/BufferStream.php',
         'GuzzleHttp\\Psr7\\CachingStream' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/CachingStream.php',
@@ -560,6 +560,8 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
         'Zend\\EventManager\\SharedEventsCapableInterface' => __DIR__ . '/..' . '/zendframework/zend-eventmanager/src/SharedEventsCapableInterface.php',
         'Zend\\EventManager\\Test\\EventListenerIntrospectionTrait' => __DIR__ . '/..' . '/zendframework/zend-eventmanager/src/Test/EventListenerIntrospectionTrait.php',
         'Zend\\ServiceManager\\AbstractFactoryInterface' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/AbstractFactoryInterface.php',
+        'Zend\\ServiceManager\\AbstractFactory\\ConfigAbstractFactory' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/AbstractFactory/ConfigAbstractFactory.php',
+        'Zend\\ServiceManager\\AbstractFactory\\ReflectionBasedAbstractFactory' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/AbstractFactory/ReflectionBasedAbstractFactory.php',
         'Zend\\ServiceManager\\AbstractPluginManager' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/AbstractPluginManager.php',
         'Zend\\ServiceManager\\Config' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/Config.php',
         'Zend\\ServiceManager\\ConfigInterface' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/ConfigInterface.php',
@@ -583,6 +585,10 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
         'Zend\\ServiceManager\\ServiceLocatorInterface' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/ServiceLocatorInterface.php',
         'Zend\\ServiceManager\\ServiceManager' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/ServiceManager.php',
         'Zend\\ServiceManager\\Test\\CommonPluginManagerTrait' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/Test/CommonPluginManagerTrait.php',
+        'Zend\\ServiceManager\\Tool\\ConfigDumper' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/Tool/ConfigDumper.php',
+        'Zend\\ServiceManager\\Tool\\ConfigDumperCommand' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/Tool/ConfigDumperCommand.php',
+        'Zend\\ServiceManager\\Tool\\FactoryCreator' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/Tool/FactoryCreator.php',
+        'Zend\\ServiceManager\\Tool\\FactoryCreatorCommand' => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src/Tool/FactoryCreatorCommand.php',
         'Zend\\Stdlib\\AbstractOptions' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/AbstractOptions.php',
         'Zend\\Stdlib\\ArrayObject' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/ArrayObject.php',
         'Zend\\Stdlib\\ArraySerializableInterface' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/ArraySerializableInterface.php',
@@ -591,6 +597,7 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
         'Zend\\Stdlib\\ArrayUtils\\MergeRemoveKey' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/ArrayUtils/MergeRemoveKey.php',
         'Zend\\Stdlib\\ArrayUtils\\MergeReplaceKey' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/ArrayUtils/MergeReplaceKey.php',
         'Zend\\Stdlib\\ArrayUtils\\MergeReplaceKeyInterface' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/ArrayUtils/MergeReplaceKeyInterface.php',
+        'Zend\\Stdlib\\ConsoleHelper' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/ConsoleHelper.php',
         'Zend\\Stdlib\\DispatchableInterface' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/DispatchableInterface.php',
         'Zend\\Stdlib\\ErrorHandler' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/ErrorHandler.php',
         'Zend\\Stdlib\\Exception\\BadMethodCallException' => __DIR__ . '/..' . '/zendframework/zend-stdlib/src/Exception/BadMethodCallException.php',
@@ -637,10 +644,9 @@ class ComposerStaticInit42b8eab5ac762f62a628435e5ca18719
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit42b8eab5ac762f62a628435e5ca18719::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit42b8eab5ac762f62a628435e5ca18719::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit42b8eab5ac762f62a628435e5ca18719::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit42b8eab5ac762f62a628435e5ca18719::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc4a4f45fc513f3de9b4485e1010c0fb7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc4a4f45fc513f3de9b4485e1010c0fb7::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitc4a4f45fc513f3de9b4485e1010c0fb7::$classMap;
 
         }, null, ClassLoader::class);
     }
