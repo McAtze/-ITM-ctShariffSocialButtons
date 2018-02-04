@@ -5,24 +5,24 @@ require_once __DIR__.'/vendor/autoload.php';
 use Heise\Shariff\Backend;
 
 /**
- * Demo Application using Shariff Backend
+ * Demo Application using Shariff Backend.
  */
 class Application
 {
     /**
-     * Sample configuration
+     * Sample configuration.
      *
      * @var array
      */
-    private static $configuration = [
-        'cache' => [
-            'ttl' => 60
-        ],
-        'domains' => [
+    private static $configuration = array(
+        'cache' => array(
+            'ttl' => 60,
+        ),
+        'domains' => array(
             'www.heise.de',
-            'www.ct.de'
-        ],
-        'services' => [
+            'www.ct.de',
+        ),
+        'services' => array(
             'GooglePlus',
             'Facebook',
             'LinkedIn',
@@ -32,9 +32,9 @@ class Application
             'Pinterest',
             'Xing',
             'AddThis',
-            'Vk'
-        ]
-    ];
+            'Vk',
+        ),
+    );
 
     public static function run()
     {

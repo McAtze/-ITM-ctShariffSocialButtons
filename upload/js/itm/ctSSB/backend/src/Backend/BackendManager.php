@@ -24,7 +24,7 @@ class BackendManager
     protected $client;
 
     /** @var array */
-    protected $domains = [];
+    protected $domains = array();
 
     /** @var ServiceInterface[] */
     protected $services;
@@ -56,7 +56,7 @@ class BackendManager
                 'Passing a domain string is deprecated since 5.1, please use an array instead.',
                 E_USER_DEPRECATED
             );
-            $this->domains = [$domains];
+            $this->domains = array($domains);
         }
         $this->services = $services;
     }
@@ -102,12 +102,12 @@ class BackendManager
         /** @var ResponseInterface[]|TransferException[] $results */
         $results = Pool::batch($this->client, $requests);
 
-        $counts = [];
+        $counts = array();
         $i = 0;
         foreach ($this->services as $service) {
             if ($results[$i] instanceof TransferException) {
                 if ($this->logger !== null) {
-                    $this->logger->warning($results[$i]->getMessage(), ['exception' => $results[$i]]);
+                    $this->logger->warning($results[$i]->getMessage(), array('exception' => $results[$i]));
                 }
             } else {
                 try {
@@ -116,10 +116,10 @@ class BackendManager
                     $counts[$service->getName()] = is_array($json) ? (int) $service->extractCount($json) : 0;
                 } catch (\Exception $e) {
                     if ($this->logger !== null) {
-                        $this->logger->warning($e->getMessage(), ['exception' => $e]);
+                        $this->logger->warning($e->getMessage(), array('exception' => $e));
                     }
                 }
-                ++$i;
+                $i++;
             }
         }
 

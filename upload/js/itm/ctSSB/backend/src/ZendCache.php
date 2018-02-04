@@ -30,15 +30,15 @@ class ZendCache implements CacheInterface
         }
 
         if (!isset($configuration['adapterOptions'])) {
-            $configuration['adapterOptions'] = [];
+            $configuration['adapterOptions'] = array();
         }
 
-        $cache = StorageFactory::factory([
-            'adapter' => [
+        $cache = StorageFactory::factory(array(
+            'adapter' => array(
                 'name' => $configuration['adapter'],
                 'options' => $configuration['adapterOptions'],
-            ],
-        ]);
+            ),
+        ));
 
         $options = $cache->getOptions();
         $options->setNamespace('Shariff');

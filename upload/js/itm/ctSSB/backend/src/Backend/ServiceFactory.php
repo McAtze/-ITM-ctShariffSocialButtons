@@ -13,7 +13,7 @@ class ServiceFactory
     protected $client;
 
     /** @var ServiceInterface[] */
-    protected $serviceMap = [];
+    protected $serviceMap = array();
 
     /**
      * @param ClientInterface $client
@@ -40,7 +40,7 @@ class ServiceFactory
      */
     public function getServicesByName(array $serviceNames, array $config)
     {
-        $services = [];
+        $services = array();
         foreach ($serviceNames as $serviceName) {
             try {
                 $service = $this->createService($serviceName, $config);

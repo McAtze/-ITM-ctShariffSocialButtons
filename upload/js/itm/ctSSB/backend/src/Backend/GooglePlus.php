@@ -23,24 +23,24 @@ class GooglePlus extends Request implements ServiceInterface
     public function getRequest($url)
     {
         $gPlusUrl = 'https://clients6.google.com/rpc?key=AIzaSyCKSbrvQasunBoV16zDH9R33D88CeLr9gQ';
-        $json = [
+        $json = array(
             'method' => 'pos.plusones.get',
             'id' => 'p',
-            'params' => [
+            'params' => array(
                 'nolog' => 'true',
                 'id' => $url,
                 'source' => 'widget',
                 'userId' => '@viewer',
                 'groupId' => '@self',
-            ],
+            ),
             'jsonrpc' => '2.0',
             'key' => 'p',
             'apiVersion' => 'v1',
-        ];
+        );
 
         $body = Psr7\stream_for(json_encode($json));
 
-        return new \GuzzleHttp\Psr7\Request('POST', $gPlusUrl, [], $body);
+        return new \GuzzleHttp\Psr7\Request('POST', $gPlusUrl, array(), $body);
     }
 
     /**
