@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.1.2 (2018-02-04)
+  * Just some Updates with Shariff CSS & JS Files..
+    * See changes @https://github.com/heiseonline/shariff/blob/master/CHANGELOG.md
+
 ## v1.24.1 (2016-12-06)
   * Just some Updates with Shariff CSS & JS Files..
     * See changes @https://github.com/heiseonline/shariff/blob/master/CHANGELOG.md
