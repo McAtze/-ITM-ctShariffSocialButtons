@@ -1,5 +1,8 @@
 ## Changelog
 
+#### v2.1.2a (2018-02-10)
+  * Fixed style issue in mobile style at sidebar..
+
 #### v2.1.2 (2018-02-04)
   * Just some Updates with Shariff CSS & JS Files..
   * See changes @https://github.com/heiseonline/shariff/blob/master/CHANGELOG.md
