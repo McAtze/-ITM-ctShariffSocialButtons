@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="2.1.2" version_id="2012002" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="" filesumclass="" ab_pathes="a:4:{s:2:&quot;js&quot;;s:10:&quot;/itm/ctSSB&quot;;s:7:&quot;library&quot;;s:10:&quot;/ITM/ctSSB&quot;;s:6:&quot;styles&quot;;s:10:&quot;/itm/ctSSB&quot;;s:5:&quot;other&quot;;s:0:&quot;&quot;;}">
+<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="2.1.2a" version_id="2012005" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="" filesumclass="" ab_pathes="a:4:{s:2:&quot;js&quot;;s:10:&quot;/itm/ctSSB&quot;;s:7:&quot;library&quot;;s:10:&quot;/ITM/ctSSB&quot;;s:6:&quot;styles&quot;;s:10:&quot;/itm/ctSSB&quot;;s:5:&quot;other&quot;;s:0:&quot;&quot;;}">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -623,7 +623,7 @@ Set width in px (e.g. 62px).]]></phrase>
 	{xen:if {$xenOptions.itm_ctSSB_infoURL}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}
 	data-info-display="{$xenOptions.itm_ctSSB_infoURLDisplay}">
 </div>]]></template>
-    <template title="itm_ctSSB_extra.css" version_id="1025200" version_string="1.25.2"><![CDATA[/*** EXTRA.CSS for Responsive Design on Shariff Social Buttons ***/
+    <template title="itm_ctSSB_extra.css" version_id="2012002" version_string="2.1.2"><![CDATA[/*** EXTRA.CSS for Responsive Design on Shariff Social Buttons ***/
 
 <xen:if is="{xen:property enableResponsive} && {$xenOptions.itm_ctSSB_ResWidth}">
 	<xen:set var="$itm_ctSSB_ResWidth">{$xenOptions.itm_ctSSB_ResWidth}</xen:set>
@@ -646,6 +646,7 @@ Set width in px (e.g. 62px).]]></phrase>
 	}
 
 	@media (max-width:{xen:property maxResponsiveMediumWidth}) {
+		.Responsive .sharePage {display: inline !important;}
 		.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
 		.Responsive .shariff .orientation-horizontal li {
 			min-width: {$itm_ctSSB_ResWidth} !important;
@@ -850,6 +851,7 @@ $0
     <modification template="sidebar_share_page" modification_key="SetIntoSidebarTemplate" description="Set Buttons into Sidebar" execution_order="15" enabled="1" action="preg_replace">
       <find><![CDATA[#<xen:hook name="sidebar_share_page_options">.*<\/xen:hook>#Uus]]></find>
       <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_enable_Sidebar}">
+<xen:require css="itm_ctSSB_extra.css" />
 <xen:include template="itm_ctSSB_sidebar_share_page" />
 <xen:else />
 <xen:if is="!{$xenOptions.itm_ctSSB_disable_defaultButtons}">
@@ -871,6 +873,7 @@ $0
     <modification template="share_page" modification_key="SetToSharePage" description="Set Buttons into Template" execution_order="15" enabled="1" action="preg_replace">
       <find><![CDATA[#<xen:hook name="share_page_options">.*<\/xen:hook>#Uus]]></find>
       <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_enable_SharePage}">
+<xen:require css="itm_ctSSB_extra.css" />
 <xen:include template="itm_ctSSB_share_page" />
 <xen:else />
 <xen:if is="!{$xenOptions.itm_ctSSB_disable_defaultButtons}">
