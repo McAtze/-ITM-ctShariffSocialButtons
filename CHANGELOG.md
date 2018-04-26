@@ -1,6 +1,5 @@
 ## Changelog
 
-<<<<<<< HEAD
 #### v3.0.1 (2018-04-26)
   * Fixed SEO friendliness by adding `rel="nofollow"` to all button links.
   * Fixed Telegram service not opening in a popup.
@@ -18,10 +17,9 @@
   * Fixed compatibility with Bootstrap 4.
   * Fixed reddit icon.
   * See changes @https://github.com/heiseonline/shariff/blob/develop/CHANGELOG.md
-=======
+
 #### v2.1.2a (2018-02-10)
   * Fixed style issue in mobile style at sidebar..
->>>>>>> origin/master
 
 #### v2.1.2 (2018-02-04)
   * Just some Updates with Shariff CSS & JS Files..
