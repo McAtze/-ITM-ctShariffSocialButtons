@@ -2,8 +2,7 @@
 
 class ITM_ctSSB_Listener
 {
-<<<<<<< HEAD
-=======
+
     /**
      * @param $templateName
      * @param $content
@@ -15,7 +14,6 @@ class ITM_ctSSB_Listener
     {
         if ($template instanceof XenForo_Template_Admin) {
             $params = $template->getParams();
->>>>>>> origin/master
 
 	/**
 	 * @param $templateName
