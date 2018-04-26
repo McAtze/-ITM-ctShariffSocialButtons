@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language title="Deutsch [Du]" date_format="j. F Y" time_format="H:i" decimal_point="," thousands_separator="." language_code="de-DE" text_direction="LTR" addon_id="itm_ctSSB">
+  <phrase title="itm_ctSSB_button_icon" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Icon]]></phrase>
+  <phrase title="itm_ctSSB_button_iconCount" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Icon-count]]></phrase>
+  <phrase title="itm_ctSSB_button_standard" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Standard]]></phrase>
+  <phrase title="itm_ctSSB_email_body" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Ich habe diese Seite bei {sitename} gefunden, das wäre eventuell auch was für dich.]]></phrase>
+  <phrase title="itm_ctSSB_email_subject" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Das könnte auch für dich Interessant sein..]]></phrase>
+  <phrase title="itm_ctSSB_hideLink" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Copyright in der Fußzeile verstecken]]></phrase>
+  <phrase title="itm_ctSSB_infoURL_blank" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Im neuen Fenster]]></phrase>
+  <phrase title="itm_ctSSB_infoURL_popup" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Als PopUp]]></phrase>
+  <phrase title="itm_ctSSB_infoURL_self" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Im selben Fenster]]></phrase>
+  <phrase title="itm_ctSSB_insertCSS_com" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Komplett]]></phrase>
+  <phrase title="itm_ctSSB_insertCSS_local" addon_id="itm_ctSSB" version_id="1024001" version_string="1.24.0.1"><![CDATA[Lokal]]></phrase>
+  <phrase title="itm_ctSSB_insertCSS_min" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Minimal]]></phrase>
+  <phrase title="itm_ctSSB_insertJS_com" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Komplett]]></phrase>
+  <phrase title="itm_ctSSB_insertJS_local" addon_id="itm_ctSSB" version_id="1024001" version_string="1.24.0.1"><![CDATA[Lokal]]></phrase>
+  <phrase title="itm_ctSSB_insertJS_min" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Minimal]]></phrase>
+  <phrase title="itm_ctSSB_lang_bg" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Bulgarisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_cs" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Tschechisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_da" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Dänisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_de" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Deutsch]]></phrase>
+  <phrase title="itm_ctSSB_lang_en" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Englisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_es" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Spanisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_fi" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Finnisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_fr" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Französisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_hr" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Kroatisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_hu" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Ungarisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_it" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Italienisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_ja" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Japanisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_ko" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Koreanisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_no" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Norwegisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_pl" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Polnisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_pt" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Portugiesisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_ro" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Rumänisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_ru" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Russisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_sk" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Slowakisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_sl" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Slowenisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_sr" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Bosnisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_sv" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Schwedisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_tr" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Türkisch]]></phrase>
+  <phrase title="itm_ctSSB_lang_zh" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Chinesisch]]></phrase>
+  <phrase title="itm_ctSSB_orient_horizontal" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Horizontal]]></phrase>
+  <phrase title="itm_ctSSB_orient_vertical" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Vertikal]]></phrase>
+  <phrase title="itm_ctSSB_showLink" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Copyright in der Fußzeile anzeigen]]></phrase>
+  <phrase title="itm_ctSSB_tab_defaultOptions" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Einstellungen]]></phrase>
+  <phrase title="itm_ctSSB_tab_shareposition" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Position der Button]]></phrase>
+  <phrase title="itm_ctSSB_tab_socialservice" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Auswahl sozialer Dienste]]></phrase>
+  <phrase title="itm_ctSSB_tab_supportMe" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Support.Me]]></phrase>
+  <phrase title="itm_ctSSB_theme_grey" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Grau]]></phrase>
+  <phrase title="itm_ctSSB_theme_standard" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Standard]]></phrase>
+  <phrase title="itm_ctSSB_theme_white" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Weiß]]></phrase>
+  <phrase title="option_group_itm_ctSSB" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[[ITM] c't Shariff Buttons]]></phrase>
+  <phrase title="option_group_itm_ctSSB_description" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Mit Hilfe dieser Einstellungen können die Vorgaben für das [ITM] c't Shariff Social Buttons AddOn festgelegt werden.]]></phrase>
+  <phrase title="option_itm_ctSSB_ResWidth" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Feste Responsive Breite]]></phrase>
+  <phrase title="option_itm_ctSSB_ResWidth_explain" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Hier kann eine feste Breite der Buttons in der responsiven Ansicht im Forum und auf den Seiten eingetragen werden. Dies betrifft nicht die Sidebar. Die Breite muss in Pixel angegeben werden (z.B. 62px).]]></phrase>
+  <phrase title="option_itm_ctSSB_addthis" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[AddThis Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_addthis_explain" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Aktiviert den AddThis Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_buttonStyle" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Style der Button auswählen..]]></phrase>
+  <phrase title="option_itm_ctSSB_buttonStyle_explain" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Hier kann ausgewählt werden wie die Button aussehen sollen. Möglichkeiten: <b>Standard</b>, <b>Icon</b>, <b>Icon-count</b>. Mit <b>Icon</b> wird nur der Icon, mit <b>Icon-count</b> wird der Icon und der Zähler und mit <b>Standard</b> wird der Icon, der Zähler und der Text angezeigt. Alles Abhängig natürlich von der Bildschirmgröße.]]></phrase>
+  <phrase title="option_itm_ctSSB_countersCache_ttl" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Zähler Cache-TTL]]></phrase>
+  <phrase title="option_itm_ctSSB_countersCache_ttl_explain" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Wenn die Zähler aktiviert sind, kann hier eingestellt werden wie oft diese aktualisiert werden sollen. Die Zähler werden lokal gespeichert.<br />
+<b>Standard: 3600 (1 Stunde), Min: 30, Max: 86400 (1 Tag)</b>]]></phrase>
+  <phrase title="option_itm_ctSSB_counts" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Zähler anzeigen]]></phrase>
+  <phrase title="option_itm_ctSSB_counts_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Hiermit können die einzelnen Zähler der Button aktiviert werden.]]></phrase>
+  <phrase title="option_itm_ctSSB_diaspora" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Diaspora Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_diaspora_explain" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Aktiviert den Diaspora Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_disable_defaultButtons" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Standard Button deaktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_disable_defaultButtons_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Wenn aktiviert, werden die Standard Button ausgeblendet.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_AT" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[AddThis Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_AT_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den AddThis Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_CTA_FT" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Für das "CTA Featured Threads"-AddOn aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_CTA_FT_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Wenn aktiviert, werden die ausgewählten Buttons in den Positionen im CTA Featured Threads eingebunden.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_DS" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Diaspora Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_DS_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Diaspora Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_EM" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Email Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_EM_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den E-Mail Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_FB" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Facebook Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_FB_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Facebook Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_FL" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Flattr Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_FLB" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Flipboard Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_FLB_explain" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Aktiviert den Flipboard Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_FL_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Wenn aktiviert, und die passende Flattr-Kategorie sowie der Flattr-Nutzer eingetragen sind, wird der Button in den jeweiligen Templates angezeigt.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_GP" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[GooglePlus Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_GP_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den GooglePlus Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_LI" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[LinkedIn Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_LI_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den LinkedIn Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_PI" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Pinterest Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_PI_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Pinterest Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_PR" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Drucken Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_PR_explain" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Aktiviert den Drucken Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_QZ" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Qzone Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_QZ_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Qzone Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_RD" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Reddit Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_RD_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Reddit Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_SU" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[StumbleUpon Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_SU_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den StumbleUpon Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_SharePage" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[In Themen & Seiten (Standardposition) aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_SharePage_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Wenn aktiviert, werden die ausgewählten Button in den Standardpositionen in Themen und auf Seiten angezeigt.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_SideHor" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Horizontale Ansicht in Sidebar]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_Sidebar" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[In der Sidebar aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_Sidebar_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Wenn aktiviert, werden die ausgewählten Buttons in den Standardpositionen in der Sidebar angezeigt.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TB" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Tumblr Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TB_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Tumblr Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TG" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Telegram Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TG_explain" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Aktiviert den Telegram Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TH" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Threema Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TH_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Threema Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TW" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Twitter Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TWB" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Tencent-Weibo Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TWB_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Tencent-Weibo Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_TW_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Twitter Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_VK" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[VK Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_VK_explain" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Aktiviert den VK Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_WA" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[WhatsApp Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_WA_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den WhatsApp Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_WB" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Weibo Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_WB_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Weibo Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_XFMG" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Für die Xenforo Media Galerie aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_XFMG_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Wenn aktiviert, werden die ausgewählten Buttons in den Standardpositionen in der Xenforo Media Galerie angezeigt.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_XI" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Xing Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_XI_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Xing Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_XenZineSharePage" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Für das "XenZine"-AddOn aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_XenZineSharePage_explain" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Wenn aktiviert, werden die ausgewählten Buttons in den Positionen im XenZine Articles AddOn eingebunden.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_counters" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Zähler zu den Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_counters_explain" addon_id="itm_ctSSB" version_id="1024001" version_string="1.24.0.1"><![CDATA[Wenn aktiviert, wird in den Button die Anzahl der geteilten Inhalte der jeweiligen Dienste angezeigt. Derzeit werden dafür nur die Dienste AddThis, Facebook, Flattr, GooglePlus, LinkedIn, Pinterest, Reddit, StumbleUpon und Xing unterstützt. Um diese Einstellung zu nutzen musst du in der <b>/js/itm/ctSSB/backend/index.php</b> deine Domain (ohne http/https) und weitere Daten eintragen. Ein Muster der Index.php findest du <a href="https://github.com/heiseonline/shariff-backend-php#full-config-example" target="_blank">hier</a>.]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_customTemplate" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[In benutzerdefinierten Templates aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_enable_customTemplate_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Diese Einstellung folgt in späteren Versionen..]]></phrase>
+  <phrase title="option_itm_ctSSB_facebook" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Facebook Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_facebook_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Aktiviert den Facebook Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_flattr" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Flattr Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_flattr_category" addon_id="itm_ctSSB" version_id="1024001" version_string="1.24.0.1"><![CDATA[Flattr Kategorie]]></phrase>
+  <phrase title="option_itm_ctSSB_flattr_explain" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Aktiviert den Flattr Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_flattr_user" addon_id="itm_ctSSB" version_id="1024001" version_string="1.24.0.1"><![CDATA[Flattr Benutzer]]></phrase>
+  <phrase title="option_itm_ctSSB_googleplus" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Google+ Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_googleplus_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Aktiviert den Google+ Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_info" addon_id="itm_ctSSB" version_id="101612" version_string="1.16.1"><![CDATA[Info Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_infoURL" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[URL für Info Button]]></phrase>
+  <phrase title="option_itm_ctSSB_infoURLDisplay" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Anzeigeart der Infoseite]]></phrase>
+  <phrase title="option_itm_ctSSB_infoURLDisplay_explain" addon_id="itm_ctSSB" version_id="1025200" version_string="1.25.2"><![CDATA[Hier kannst du einstellen wie die Infoseite angezeigt werden soll.]]></phrase>
+  <phrase title="option_itm_ctSSB_infoURL_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Aktiviert den Info Button in den jeweiligen Templates mit der hier eingetragenen URL.]]></phrase>
+  <phrase title="option_itm_ctSSB_info_explain" addon_id="itm_ctSSB" version_id="101612" version_string="1.16.1"><![CDATA[Aktiviert den Info Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_insertCSS" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Shariff CSS einbinden..]]></phrase>
+  <phrase title="option_itm_ctSSB_insertCSS_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Wenn <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank">FontAwesome</a> schon eingebunden wurde reicht die <i>Minimal</i>, ansonsten sollte die CSS <i>Komplett</i> eingebunden werden.]]></phrase>
+  <phrase title="option_itm_ctSSB_insertCSS_local" addon_id="itm_ctSSB" version_id="1024001" version_string="1.24.0.1"><![CDATA[Pfad zu lokalen CSS..]]></phrase>
+  <phrase title="option_itm_ctSSB_insertCSS_local_explain" addon_id="itm_ctSSB" version_id="1024001" version_string="1.24.0.1"><![CDATA[Gib hier den lokalen Pfad zu deinen CSS-Dateien an, z.B. <b>styles/itm/ctSSB/shariff.min.css</b> oder <b>styles/itm/ctSSB/shariff.complete.css</b>. Die Regelung ob Minimal oder Komplett einbinden gilt auch hier. Wenn kein FontAwesome durch Styles oder AddOns eingebunden ist, sollte komplett eingebunden werden.]]></phrase>
+  <phrase title="option_itm_ctSSB_insertJS" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Shariff JS einbinden..]]></phrase>
+  <phrase title="option_itm_ctSSB_insertJS_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Wenn <a href="https://github.com/jquery/jquery" target="_blank">jQuery</a> schon eingebunden wurde reicht die <i>Minimal</i>, ansonsten sollte die JS <i>Komplett</i> eingebunden werden.]]></phrase>
+  <phrase title="option_itm_ctSSB_insertJS_local" addon_id="itm_ctSSB" version_id="1024001" version_string="1.24.0.1"><![CDATA[Pfad zu lokalen JS..]]></phrase>
+  <phrase title="option_itm_ctSSB_insertJS_local_explain" addon_id="itm_ctSSB" version_id="1024001" version_string="1.24.0.1"><![CDATA[Gib hier den Pfad zu deinen lokalen JS-Dateien ein, z.B. <b>js/itm/ctSSB/shariff.min.js</b> oder <b>js/itm/ctSSB/shariff.complete.js</b>. Die Regelung ob Minimal oder Komplett einbinden gilt auch hier. Wenn kein FontAwesome durch Styles oder AddOns eingebunden ist, sollte komplett eingebunden werden.]]></phrase>
+  <phrase title="option_itm_ctSSB_lang" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Lokalisierung auswählen..]]></phrase>
+  <phrase title="option_itm_ctSSB_lang_explain" addon_id="itm_ctSSB" version_id="10160" version_string="1.16.0"><![CDATA[Hier kann die Lokalisierung ausgewählt werden. Verfügbar: bg, de, en, es, fi, hr, hu, ja, ko, no, pl, pt, ro, ru, sk, sl, sr, sv, tr, zh]]></phrase>
+  <phrase title="option_itm_ctSSB_linkedin" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[LinkedIn Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_linkedin_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Aktiviert den LinkedIn Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_mail" addon_id="itm_ctSSB" version_id="10003" version_string="1.0.2"><![CDATA[Email Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_mail_explain" addon_id="itm_ctSSB" version_id="10003" version_string="1.0.2"><![CDATA[Aktiviert den Email Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_pinterest" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Pinterest Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_pinterest_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Aktiviert den Pinterest Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_qzone" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Qzone Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_qzone_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Qzone Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_reddit" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Reddit Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_reddit_explain" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Aktiviert den Reddit Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_stumbleupon" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Stumbleupon Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_stumbleupon_explain" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Aktiviert den Stumbleupon Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_support_me" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Unterstütze mich und meine Arbeit]]></phrase>
+  <phrase title="option_itm_ctSSB_support_me_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Du kannst mich auch direkt Unterstützen mit einer kleinen freiwilligen Spende in USD oder in EUR.
+<br /><br />
+<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AK7TCU5JS4TY"><img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal." title="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal."></a>
+<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7TKCNB59HAK48"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal - The safer, easier way to pay online!" title="PayPal - The safer, easier way to pay online!"></a>]]></phrase>
+  <phrase title="option_itm_ctSSB_tencent_weibo" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Tencent-Weibo Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_tencent_weibo_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Tencent-Weibo Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_theme" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Theme der Button auswählen..]]></phrase>
+  <phrase title="option_itm_ctSSB_theme_explain" addon_id="itm_ctSSB" version_id="3000107" version_string="3.0.1"><![CDATA[Hier kann zwischen den aktuell 3 verschiedenen Themes ausgewählt werden.]]></phrase>
+  <phrase title="option_itm_ctSSB_threema" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Threema Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_threema_explain" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Aktiviert den Threema Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_tumblr" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Tumblr Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_tumblr_explain" addon_id="itm_ctSSB" version_id="10231" version_string="1.23.1"><![CDATA[Aktiviert den Tumblr Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_twitter" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Twitter Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_twitter_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Aktiviert den Twitter Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_weibo" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Weibo Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_weibo_explain" addon_id="itm_ctSSB" version_id="102400" version_string="1.24.0"><![CDATA[Aktiviert den Weibo Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_whatsapp" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[WhatsApp Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_whatsapp_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Aktiviert den WhatsApp Button in den jeweiligen Templates.]]></phrase>
+  <phrase title="option_itm_ctSSB_xenMiG_widget_orientation" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Ausrichtung der Button im Widget]]></phrase>
+  <phrase title="option_itm_ctSSB_xenMiG_widget_orientation_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Da das Share Widget verschiedene Größen und Formen haben kann, ist es hilfreich die Ausrichtung der Buttons einstellen zu können. Hier kann ausgewählt werden, ob die Button horizontal oder vertikal angeordnet sind.]]></phrase>
+  <phrase title="option_itm_ctSSB_xing" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Xing Button aktivieren]]></phrase>
+  <phrase title="option_itm_ctSSB_xing_explain" addon_id="itm_ctSSB" version_id="10001" version_string="1.0.0"><![CDATA[Aktiviert den Xing Button in den jeweiligen Templates.]]></phrase>
+</language>

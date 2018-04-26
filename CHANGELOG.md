@@ -1,5 +1,23 @@
 ## Changelog
 
+#### v3.0.1 (2018-04-26)
+  * Fixed SEO friendliness by adding `rel="nofollow"` to all button links.
+  * Fixed Telegram service not opening in a popup.
+  * Added czech translations.
+  * Removed G+ counter from documentation and demo.
+  * Fixed handling of `data-mail-subject.
+  * Fixed crashes occuring if HTML document is missing a valid `<title> tag.
+  * Fixed typo in documentation.
+  * Improved distinguishability of reddit icon.
+  * Improved translations and translation documentation.
+  * Added smaller share button variants.
+  * Added Flipboard service.
+  * Updated Font Awesome to version 5 (free 1.0.3).
+  * Improved default service list documentation.
+  * Fixed compatibility with Bootstrap 4.
+  * Fixed reddit icon.
+  * See changes @https://github.com/heiseonline/shariff/blob/develop/CHANGELOG.md
+
 #### v2.1.2 (2018-02-04)
   * Just some Updates with Shariff CSS & JS Files..
   * See changes @https://github.com/heiseonline/shariff/blob/master/CHANGELOG.md
