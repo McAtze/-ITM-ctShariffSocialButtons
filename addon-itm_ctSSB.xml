@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="2.1.2a" version_id="2012005" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="" filesumclass="" ab_pathes="a:4:{s:2:&quot;js&quot;;s:10:&quot;/itm/ctSSB&quot;;s:7:&quot;library&quot;;s:10:&quot;/ITM/ctSSB&quot;;s:6:&quot;styles&quot;;s:10:&quot;/itm/ctSSB&quot;;s:5:&quot;other&quot;;s:0:&quot;&quot;;}">
+<addon addon_id="itm_ctSSB" title="[ITM] c't Shariff Buttons" version_string="3.0.1" version_id="3000107" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -99,6 +99,7 @@
   <admin_template_modifications/>
   <code_events/>
   <code_event_listeners>
+    <listener event_id="init_dependencies" execute_order="10" callback_class="ITM_ctSSB_Listener" callback_method="extendInitDependencies" active="1" hint="" description=""/>
     <listener event_id="template_post_render" execute_order="10" callback_class="ITM_ctSSB_Listener" callback_method="template_post_render" active="1" hint="" description=""/>
   </code_event_listeners>
   <cron/>
@@ -113,6 +114,21 @@ max=75
 step=10</edit_format_params>
       <sub_options></sub_options>
       <relation group_id="itm_ctSSB" display_order="41"/>
+    </option>
+    <option option_id="itm_ctSSB_buttonStyle" edit_format="select" data_type="string" can_backup="1">
+      <default_value>standard</default_value>
+      <edit_format_params>standard={xen:phrase itm_ctSSB_button_standard}
+icon={xen:phrase itm_ctSSB_button_icon}
+icon-count={xen:phrase itm_ctSSB_button_iconCount}</edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="20"/>
+    </option>
+    <option option_id="itm_ctSSB_countersCache_ttl" edit_format="spinbox" data_type="unsigned_integer" can_backup="1">
+      <default_value>3600</default_value>
+      <edit_format_params>min=30
+max=86400</edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="62"/>
     </option>
     <option option_id="itm_ctSSB_disable_defaultButtons" edit_format="onoff" data_type="boolean" can_backup="1">
       <default_value>0</default_value>
@@ -157,6 +173,12 @@ step=10</edit_format_params>
 flaCat
 flaUs</sub_options>
       <relation group_id="itm_ctSSB" display_order="209"/>
+    </option>
+    <option option_id="itm_ctSSB_enable_FLB" edit_format="onoff" data_type="string" can_backup="1">
+      <default_value>1</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="220"/>
     </option>
     <option option_id="itm_ctSSB_enable_GP" edit_format="onoff" data_type="boolean" can_backup="1">
       <default_value>1</default_value>
@@ -205,6 +227,12 @@ flaUs</sub_options>
       <edit_format_params></edit_format_params>
       <sub_options></sub_options>
       <relation group_id="itm_ctSSB" display_order="101"/>
+    </option>
+    <option option_id="itm_ctSSB_enable_SideHor" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value>0</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="108"/>
     </option>
     <option option_id="itm_ctSSB_enable_Sidebar" edit_format="onoff" data_type="boolean" can_backup="1">
       <default_value>1</default_value>
@@ -272,6 +300,12 @@ flaUs</sub_options>
       <sub_options></sub_options>
       <relation group_id="itm_ctSSB" display_order="206"/>
     </option>
+    <option option_id="itm_ctSSB_enable_XenZineSharePage" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value>0</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="itm_ctSSB" display_order="105"/>
+    </option>
     <option option_id="itm_ctSSB_enable_counters" edit_format="onoff" data_type="boolean" can_backup="1">
       <default_value>1</default_value>
       <edit_format_params></edit_format_params>
@@ -329,12 +363,16 @@ loc={xen:phrase itm_ctSSB_insertJS_local}</edit_format_params>
     <option option_id="itm_ctSSB_lang" edit_format="select" data_type="string" can_backup="1">
       <default_value>de</default_value>
       <edit_format_params>bg={xen:phrase itm_ctSSB_lang_bg}
+cs={xen:phrase itm_ctSSB_lang_cs}
+da={xen:phrase itm_ctSSB_lang_da}
 de={xen:phrase itm_ctSSB_lang_de}
 en={xen:phrase itm_ctSSB_lang_en}
 es={xen:phrase itm_ctSSB_lang_es}
 fi={xen:phrase itm_ctSSB_lang_fi}
+fr={xen:phrase itm_ctSSB_lang_fr}
 hr={xen:phrase itm_ctSSB_lang_hr}
 hu={xen:phrase itm_ctSSB_lang_hu}
+it={xen:phrase itm_ctSSB_lang_it}
 ja={xen:phrase itm_ctSSB_lang_ja}
 ko={xen:phrase itm_ctSSB_lang_ko}
 no={xen:phrase itm_ctSSB_lang_no}
@@ -373,6 +411,9 @@ white={xen:phrase itm_ctSSB_theme_white}</edit_format_params>
     <interface_groups/>
   </permissions>
   <phrases>
+    <phrase title="itm_ctSSB_button_icon" global_cache="1" version_id="2012007" version_string="2.1.2b"><![CDATA[Icon]]></phrase>
+    <phrase title="itm_ctSSB_button_iconCount" global_cache="1" version_id="2012007" version_string="2.1.2b"><![CDATA[Icon-count]]></phrase>
+    <phrase title="itm_ctSSB_button_standard" global_cache="1" version_id="2012007" version_string="2.1.2b"><![CDATA[Standard]]></phrase>
     <phrase title="itm_ctSSB_email_body" global_cache="1" version_id="102400" version_string="1.24.0"><![CDATA[I've found this page at {sitename}, maybe you should take a look.]]></phrase>
     <phrase title="itm_ctSSB_email_subject" global_cache="1" version_id="102400" version_string="1.24.0"><![CDATA[That could be interesting for your ..]]></phrase>
     <phrase title="itm_ctSSB_hideLink" global_cache="1" version_id="102400" version_string="1.24.0"><![CDATA[Hide Copyright Link in Footer]]></phrase>
@@ -386,12 +427,16 @@ white={xen:phrase itm_ctSSB_theme_white}</edit_format_params>
     <phrase title="itm_ctSSB_insertJS_local" global_cache="1" version_id="1024001" version_string="1.24.0.1"><![CDATA[Locally]]></phrase>
     <phrase title="itm_ctSSB_insertJS_min" global_cache="1" version_id="10001" version_string="1.0.0"><![CDATA[Minimal]]></phrase>
     <phrase title="itm_ctSSB_lang_bg" version_id="10160" version_string="1.16.0"><![CDATA[Bulgaria]]></phrase>
+    <phrase title="itm_ctSSB_lang_cs" global_cache="1" version_id="2012007" version_string="2.1.2b"><![CDATA[Czech]]></phrase>
+    <phrase title="itm_ctSSB_lang_da" global_cache="1" version_id="2012007" version_string="2.1.2b"><![CDATA[Dansk]]></phrase>
     <phrase title="itm_ctSSB_lang_de" version_id="10160" version_string="1.16.0"><![CDATA[Germany]]></phrase>
     <phrase title="itm_ctSSB_lang_en" version_id="10160" version_string="1.16.0"><![CDATA[English]]></phrase>
     <phrase title="itm_ctSSB_lang_es" version_id="10160" version_string="1.16.0"><![CDATA[Spain]]></phrase>
     <phrase title="itm_ctSSB_lang_fi" version_id="10160" version_string="1.16.0"><![CDATA[Finland]]></phrase>
+    <phrase title="itm_ctSSB_lang_fr" global_cache="1" version_id="2012007" version_string="2.1.2b"><![CDATA[France]]></phrase>
     <phrase title="itm_ctSSB_lang_hr" version_id="10160" version_string="1.16.0"><![CDATA[Croatia]]></phrase>
     <phrase title="itm_ctSSB_lang_hu" version_id="10160" version_string="1.16.0"><![CDATA[Hungary]]></phrase>
+    <phrase title="itm_ctSSB_lang_it" global_cache="1" version_id="2012007" version_string="2.1.2b"><![CDATA[Italy]]></phrase>
     <phrase title="itm_ctSSB_lang_ja" version_id="10160" version_string="1.16.0"><![CDATA[Japan]]></phrase>
     <phrase title="itm_ctSSB_lang_ko" version_id="10160" version_string="1.16.0"><![CDATA[Korea]]></phrase>
     <phrase title="itm_ctSSB_lang_no" version_id="10160" version_string="1.16.0"><![CDATA[Norway]]></phrase>
@@ -419,6 +464,11 @@ white={xen:phrase itm_ctSSB_theme_white}</edit_format_params>
     <phrase title="option_group_itm_ctSSB_description" version_id="10001" version_string="1.0.0"><![CDATA[Options for the new c't Shariff Social Buttons.]]></phrase>
     <phrase title="option_itm_ctSSB_addthis" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show AddThis]]></phrase>
     <phrase title="option_itm_ctSSB_addthis_explain" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_buttonStyle" version_id="2012007" version_string="2.1.2b"><![CDATA[Choose Button Style]]></phrase>
+    <phrase title="option_itm_ctSSB_buttonStyle_explain" version_id="2012007" version_string="2.1.2b"><![CDATA[How to display the buttons. Values: <b>standard</b>, <b>icon</b>, <b>icon-count</b>. With <b>icon</b> only the icon is shown, with <b>icon-count</b> icon and counter and with <b>standard</b> icon, text and counter are shown, depending on the display size.]]></phrase>
+    <phrase title="option_itm_ctSSB_countersCache_ttl" version_id="2012005" version_string="2.1.2a"><![CDATA[Counter Cache TTL]]></phrase>
+    <phrase title="option_itm_ctSSB_countersCache_ttl_explain" version_id="2012005" version_string="2.1.2a"><![CDATA[If you enable the counts for the share buttons, choose how often we should update them. The counters are cached locally.<br />
+<b>Default: 3600 (1 hour), Min: 30, Max: 86400 (1 day)</b>]]></phrase>
     <phrase title="option_itm_ctSSB_counts" version_id="101612" version_string="1.16.1"><![CDATA[Show Counts]]></phrase>
     <phrase title="option_itm_ctSSB_counts_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
     <phrase title="option_itm_ctSSB_diaspora" global_cache="1" version_id="10231" version_string="1.23.1"><![CDATA[Show Diaspora]]></phrase>
@@ -428,7 +478,7 @@ white={xen:phrase itm_ctSSB_theme_white}</edit_format_params>
     <phrase title="option_itm_ctSSB_enable_AT" version_id="102400" version_string="1.24.0"><![CDATA[Enable AddThis]]></phrase>
     <phrase title="option_itm_ctSSB_enable_AT_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_enable_counters" version_id="102400" version_string="1.24.0"><![CDATA[Enable Counters]]></phrase>
-    <phrase title="option_itm_ctSSB_enable_counters_explain" version_id="102400" version_string="1.24.0"><![CDATA[These options let you se the counts how often your page is shared.]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_counters_explain" version_id="2012007" version_string="2.1.2b"><![CDATA[These options let you se the counts how often your page is shared. If you want to use Facebook, you should insert your Facebook AppID and your Facebook AppSecret at <b>/admin.php?options/list/facebook</b>.]]></phrase>
     <phrase title="option_itm_ctSSB_enable_CTA_FT" version_id="102400" version_string="1.24.0"><![CDATA[Enable in CTA Featured Threads]]></phrase>
     <phrase title="option_itm_ctSSB_enable_CTA_FT_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_enable_customTemplate" version_id="102400" version_string="1.24.0"><![CDATA[Enable in Custom Templates]]></phrase>
@@ -440,6 +490,8 @@ white={xen:phrase itm_ctSSB_theme_white}</edit_format_params>
     <phrase title="option_itm_ctSSB_enable_FB" version_id="102400" version_string="1.24.0"><![CDATA[Enable Facebook]]></phrase>
     <phrase title="option_itm_ctSSB_enable_FB_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_enable_FL" version_id="102400" version_string="1.24.0"><![CDATA[Enable Flattr]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_FLB" version_id="2012007" version_string="2.1.2b"><![CDATA[Enable Flipboard]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_FLB_explain" version_id="2012007" version_string="2.1.2b"><![CDATA[Explain...]]></phrase>
     <phrase title="option_itm_ctSSB_enable_FL_explain" version_id="102400" version_string="1.24.0"><![CDATA[If enabled, you should enter the flattr category and the flattr user how will catch all what was flattred.]]></phrase>
     <phrase title="option_itm_ctSSB_enable_GP" version_id="102400" version_string="1.24.0"><![CDATA[Enable Google+]]></phrase>
     <phrase title="option_itm_ctSSB_enable_GP_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
@@ -457,6 +509,8 @@ white={xen:phrase itm_ctSSB_theme_white}</edit_format_params>
     <phrase title="option_itm_ctSSB_enable_SharePage_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_enable_Sidebar" version_id="102400" version_string="1.24.0"><![CDATA[Enable Sidebar Positions]]></phrase>
     <phrase title="option_itm_ctSSB_enable_Sidebar_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_SideHor" version_id="2012005" version_string="2.1.2a"><![CDATA[Enable Horizontal in Sidebar]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_SideHor_explain" version_id="2012005" version_string="2.1.2a"><![CDATA[]]></phrase>
     <phrase title="option_itm_ctSSB_enable_SU" version_id="102400" version_string="1.24.0"><![CDATA[Enable StumbleUpon]]></phrase>
     <phrase title="option_itm_ctSSB_enable_SU_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_enable_TB" version_id="102400" version_string="1.24.0"><![CDATA[Enable Tumblr]]></phrase>
@@ -475,6 +529,8 @@ white={xen:phrase itm_ctSSB_theme_white}</edit_format_params>
     <phrase title="option_itm_ctSSB_enable_WA_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_enable_WB" version_id="102400" version_string="1.24.0"><![CDATA[Enable Weibo]]></phrase>
     <phrase title="option_itm_ctSSB_enable_WB_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_XenZineSharePage" version_id="2012007" version_string="2.1.2b"><![CDATA[Enable XenZine Share Buttons]]></phrase>
+    <phrase title="option_itm_ctSSB_enable_XenZineSharePage_explain" version_id="2012007" version_string="2.1.2b"><![CDATA[Explain...]]></phrase>
     <phrase title="option_itm_ctSSB_enable_XFMG" version_id="102400" version_string="1.24.0"><![CDATA[Enable in Xenforo Media Gallery]]></phrase>
     <phrase title="option_itm_ctSSB_enable_XFMG_explain" version_id="102400" version_string="1.24.0"><![CDATA[Explain..]]></phrase>
     <phrase title="option_itm_ctSSB_enable_XI" version_id="102400" version_string="1.24.0"><![CDATA[Enable Xing]]></phrase>
@@ -494,7 +550,7 @@ white={xen:phrase itm_ctSSB_theme_white}</edit_format_params>
     <phrase title="option_itm_ctSSB_infoURL_explain" version_id="101612" version_string="1.16.1"><![CDATA[Set the URL for the Info button. This works globally.]]></phrase>
     <phrase title="option_itm_ctSSB_info_explain" version_id="101612" version_string="1.16.1"><![CDATA[Explian...]]></phrase>
     <phrase title="option_itm_ctSSB_insertCSS" version_id="10001" version_string="1.0.0"><![CDATA[Insert CSS]]></phrase>
-    <phrase title="option_itm_ctSSB_insertCSS_explain" version_id="10231" version_string="1.23.1"><![CDATA[Choose .min.css if <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank">Font Awesome</a> is already included.]]></phrase>
+    <phrase title="option_itm_ctSSB_insertCSS_explain" version_id="2012007" version_string="2.1.2b"><![CDATA[Choose .min.css if <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank">Font Awesome</a> is already included. Since v3.0.1 you should always choose <b>Complete</b>, because we use now FontAwesome 5 (Free).]]></phrase>
     <phrase title="option_itm_ctSSB_insertCSS_local" version_id="1024001" version_string="1.24.0.1"><![CDATA[Path to local CSS]]></phrase>
     <phrase title="option_itm_ctSSB_insertCSS_local_explain" version_id="1024001" version_string="1.24.0.1"><![CDATA[Set the path to the CSS files, e.g. <b>styles/itm/ctSSB/shariff.min.css</b> or <b>styles/itm/ctSSB/shariff.complete.css</b>.]]></phrase>
     <phrase title="option_itm_ctSSB_insertJS" version_id="10001" version_string="1.0.0"><![CDATA[Insert JS]]></phrase>
@@ -545,18 +601,20 @@ Set width in px (e.g. 62px).]]></phrase>
   <route_prefixes/>
   <style_properties/>
   <templates>
-    <template title="itm_ctSSB_cta_ft_featured_list_item_share" version_id="1025200" version_string="1.25.2"><![CDATA[<div class="shariff" 
-	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="js/itm/ctSSB/backend/"'} 
+    <template title="itm_ctSSB_cta_ft_featured_list_item_share" version_id="2012007" version_string="2.1.2b"><![CDATA[<div class="shariff" 
+	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="{$xenOptions.boardUrl}/itm-shariff.php"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaCat}, 'data-flattr-category="{$xenOptions.itm_ctSSB_enable_FL.flaCat}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaUs}, 'data-flattr-user="{$xenOptions.itm_ctSSB_enable_FL.flaUs}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-url="mailto:"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-subject="{xen:phrase itm_ctSSB_email_subject}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-body="{xen:phrase itm_ctSSB_email_body, 'sitename={$xenOptions.boardTitle}'} - {$url}"'} 
 	data-theme="{$xenOptions.itm_ctSSB_theme}" 
+	data-button-style="{$xenOptions.itm_ctSSB_buttonStyle}" 
 	data-orientation="horizontal" 
 	data-title="{$itm_ctSSB_data_title}" 
 	data-media-url="{xen:if '{xen:property ogLogoPath}', '{xen:helper fullurl, {xen:property ogLogoPath}, 1}', 'null'}"
 	data-url="{xen:if {$url}, '{$url}', '{$xenOptions.boardUrl}'}" 
+	{xen:if {$xenOptions.tweet.via}, 'data-twitter-via="{$xenOptions.tweet.via}"'} 
 	data-lang="{$xenOptions.itm_ctSSB_lang}" 
 	data-services="[
 		{xen:if {$xenOptions.itm_ctSSB_enable_FB}, '&quot;facebook&quot;'}
@@ -577,6 +635,7 @@ Set width in px (e.g. 62px).]]></phrase>
 		{xen:if {$xenOptions.itm_ctSSB_enable_TWB}, ',&quot;tencent-weibo&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_QZ}, ',&quot;qzone&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_VK}, ',&quot;vk&quot;'}
+		{xen:if {$xenOptions.itm_ctSSB_enable_FLB}, ',&quot;flipboard&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_AT}, ',&quot;addthis&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_EM}, ',&quot;mail&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_PR}, ',&quot;print&quot;'}
@@ -584,18 +643,20 @@ Set width in px (e.g. 62px).]]></phrase>
 	{xen:if {$xenOptions.itm_ctSSB_infoURL}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}
 	data-info-display="{$xenOptions.itm_ctSSB_infoURLDisplay}">
 </div>]]></template>
-    <template title="itm_ctSSB_cta_ft_list_item_share" version_id="1025200" version_string="1.25.2"><![CDATA[<div class="shariff" 
-	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="js/itm/ctSSB/backend/"'} 
+    <template title="itm_ctSSB_cta_ft_list_item_share" version_id="2012007" version_string="2.1.2b"><![CDATA[<div class="shariff" 
+	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="{$xenOptions.boardUrl}/itm-shariff.php"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaCat}, 'data-flattr-category="{$xenOptions.itm_ctSSB_enable_FL.flaCat}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaUs}, 'data-flattr-user="{$xenOptions.itm_ctSSB_enable_FL.flaUs}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-url="mailto:"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-subject="{xen:phrase itm_ctSSB_email_subject}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-body="{xen:phrase itm_ctSSB_email_body, 'sitename={$xenOptions.boardTitle}'} - {$url}"'} 
 	data-theme="{$xenOptions.itm_ctSSB_theme}" 
+	data-button-style="{$xenOptions.itm_ctSSB_buttonStyle}" 
 	data-orientation="horizontal" 
 	data-title="{$itm_ctSSB_data_title}" 
 	data-media-url="{xen:if '{xen:property ogLogoPath}', '{xen:helper fullurl, {xen:property ogLogoPath}, 1}', 'null'}"
 	data-url="{xen:if {$url}, '{$url}', '{$xenOptions.boardUrl}'}" 
+	{xen:if {$xenOptions.tweet.via}, 'data-twitter-via="{$xenOptions.tweet.via}"'} 
 	data-lang="{$xenOptions.itm_ctSSB_lang}" 
 	data-services="[
 		{xen:if {$xenOptions.itm_ctSSB_enable_FB}, '&quot;facebook&quot;'}
@@ -616,6 +677,7 @@ Set width in px (e.g. 62px).]]></phrase>
 		{xen:if {$xenOptions.itm_ctSSB_enable_TWB}, ',&quot;tencent-weibo&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_QZ}, ',&quot;qzone&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_VK}, ',&quot;vk&quot;'}
+		{xen:if {$xenOptions.itm_ctSSB_enable_FLB}, ',&quot;flipboard&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_AT}, ',&quot;addthis&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_EM}, ',&quot;mail&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_PR}, ',&quot;print&quot;'}
@@ -623,7 +685,214 @@ Set width in px (e.g. 62px).]]></phrase>
 	{xen:if {$xenOptions.itm_ctSSB_infoURL}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}
 	data-info-display="{$xenOptions.itm_ctSSB_infoURLDisplay}">
 </div>]]></template>
-    <template title="itm_ctSSB_extra.css" version_id="2012002" version_string="2.1.2"><![CDATA[/*** EXTRA.CSS for Responsive Design on Shariff Social Buttons ***/
+    <template title="itm_ctSSB_extra.css" version_id="2012007" version_string="2.1.2b"><![CDATA[/*** EXTRA.CSS for Responsive Design on Shariff Social Buttons ***/
+
+.xenzine_article .articleInfo .shariff {
+	margin-top: 10px;
+}
+
+.shariff .orientation-horizontal {
+	display: -webkit-box
+}
+.shariff .orientation-horizontal li {
+	-webkit-box-flex: 1
+}
+.shariff .orientation-horizontal .info {
+    	-webkit-box-flex: 0
+}
+.shariff .orientation-horizontal {
+    	display: -webkit-flex;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-webkit-flex-wrap: wrap;
+    	-ms-flex-wrap: wrap;
+    	flex-wrap: wrap
+}
+.shariff .orientation-horizontal li {
+    	float: left;
+    	-webkit-flex: none;
+    	-ms-flex: none;
+    	flex: none;
+    	width: 35px;
+    	margin-right: 3%;
+    	margin-bottom: 10px
+}
+.shariff .orientation-horizontal li:last-child {
+    	margin-right: 0
+}
+.shariff .orientation-horizontal li .share_text {
+    	display: none;
+}
+.shariff .orientation-horizontal li .share_count {
+    	display: none
+}
+.shariff .orientation-vertical {
+	<xen:if is="!{$xenOptions.itm_ctSSB_enable_counters}">
+    		min-width: 30px;
+	<xen:else />
+    		min-width: 70px;
+	</xen:if>
+}
+.shariff .orientation-vertical li {
+    	display: block;
+    	width: 100%;
+    	margin: 5px 0
+}
+.shariff .orientation-vertical li .share_count {
+    	width: 24px;
+    	text-align: right
+}
+@media only screen and (min-width: 360px) {
+	.shariff .orientation-horizontal li {
+        	margin-right: 1.8%;
+		<xen:if is="!{$xenOptions.itm_ctSSB_enable_counters}">
+        		min-width: 30px;
+		<xen:else />
+        		min-width: 70px;
+		</xen:if>
+        	width: auto;
+        	-webkit-flex: 1;
+        	-ms-flex: 1;
+        	flex: 1
+    	}
+    	.shariff .orientation-horizontal li .share_count {
+        	display: block
+    	}
+    	.shariff .orientation-horizontal.col-1 li {
+	<xen:if is="!{$xenOptions.itm_ctSSB_enable_counters}">
+	        min-width: 80px;
+	        max-width: 130px
+	<xen:else />
+	        min-width: 110px;
+	        max-width: 160px
+	</xen:if>
+	}
+    	.shariff .orientation-horizontal.col-1 li .share_text,
+    	.shariff .orientation-horizontal.col-2 li .share_text,
+	.shariff .orientation-horizontal.col-3 li .share_text {
+		text-indent: 0;
+		display: inline
+	}
+}
+@media only screen and (min-width: 480px) {
+    	.shariff .orientation-horizontal.col-2 li {
+		<xen:if is="!{$xenOptions.itm_ctSSB_enable_counters}">
+		        min-width: 80px;
+		        max-width: 130px
+		<xen:else />
+		        min-width: 110px;
+		        max-width: 160px
+		</xen:if>
+	}
+	.shariff .orientation-horizontal.col-4 li .share_text {
+		text-indent: 0;
+		display: inline
+	}
+	<xen:if is="!{$xenOptions.itm_ctSSB_enable_counters}">
+		.shariff .orientation-horizontal.col-5 li .share_text {
+			text-indent: 0;
+			display: inline
+		}
+	</xen:if>
+}
+@media only screen and (min-width: 640px) {
+	.shariff .orientation-horizontal.col-3 li {
+		<xen:if is="!{$xenOptions.itm_ctSSB_enable_counters}">
+			min-width: 80px;
+			max-width: 130px
+		<xen:else />
+			min-width: 110px;
+			max-width: 160px
+		</xen:if>
+	}
+	<xen:if is="!{$xenOptions.itm_ctSSB_enable_counters}">
+		.shariff .orientation-horizontal.col-6 li .share_text,
+		.shariff .orientation-horizontal.col-7 li .share_text,
+		.shariff .orientation-horizontal.col-8 li .share_text {
+			text-indent: 0;
+			display: inline
+		}
+	<xen:else />
+	    	.shariff .orientation-horizontal.col-5 li .share_text {
+	        	text-indent: 0;
+	        	display: inline
+	    	}
+	</xen:if>
+}
+@media only screen and (min-width: 768px) {
+	.shariff .orientation-horizontal li {
+		<xen:if is="!{$xenOptions.itm_ctSSB_enable_counters}">
+			min-width: 80px;
+			max-width: 130px
+		<xen:else />
+			min-width: 110px;
+			max-width: 160px
+		</xen:if>
+	}
+    	.shariff .orientation-horizontal li .share_text {
+        	text-indent: 0;
+        	display: inline
+    	}
+}
+@media only screen and (min-width: 1024px) {
+	.shariff li {
+		height: 30px
+	}
+	.shariff li a {
+		height: 30px
+	}
+	.shariff li .fa {
+		width: 30px;
+		line-height: 30px
+	}
+	.shariff li .share_count,
+	.shariff li .share_text {
+		line-height: 30px
+	}
+	.shariff li .share_count {
+		height: 28px
+	}
+}
+.sidebar .shariff .orientation-horizontal.col-3 li,
+.sidebar .shariff .orientation-horizontal.col-4 li,
+.mast .shariff .orientation-horizontal.col-3 li,
+.mast .shariff .orientation-horizontal.col-4 li {
+	min-width: 50px;
+}
+.sidebar .shariff .orientation-horizontal.col-5 li,
+.sidebar .shariff .orientation-horizontal.col-6 li,
+.sidebar .shariff .orientation-horizontal.col-7 li,
+.mast .shariff .orientation-horizontal.col-5 li,
+.mast .shariff .orientation-horizontal.col-6 li,
+.mast .shariff .orientation-horizontal.col-7 li {
+    	min-width: 29px;
+}
+.sidebar .shariff .orientation-horizontal.col-8 li,
+.sidebar .shariff .orientation-horizontal.col-9 li,,
+.sidebar .shariff .orientation-horizontal.col-10 li,
+.mast .shariff .orientation-horizontal.col-8 li,
+.mast .shariff .orientation-horizontal.col-9 li,
+.mast .shariff .orientation-horizontal.col-10 li {
+    	min-width: 25px;
+}
+.sidebar .shariff .orientation-horizontal.col-3 li .share_text,
+.sidebar .shariff .orientation-horizontal.col-4 li .share_text,
+.sidebar .shariff .orientation-horizontal.col-5 li .share_text,
+.sidebar .shariff .orientation-horizontal.col-6 li .share_text,
+.sidebar .shariff .orientation-horizontal.col-7 li .share_text,
+.sidebar .shariff .orientation-horizontal.col-8 li .share_text,,
+.sidebar .shariff .orientation-horizontal.col-9 li .share_text,,
+.sidebar .shariff .orientation-horizontal.col-10 li .share_text,
+.mast .shariff .orientation-horizontal.col-3 li .share_text,
+.mast .shariff .orientation-horizontal.col-4 li .share_text,
+.mast .shariff .orientation-horizontal.col-5 li .share_text,
+.mast .shariff .orientation-horizontal.col-6 li .share_text,
+.mast .shariff .orientation-horizontal.col-7 li .share_text,
+.mast .shariff .orientation-horizontal.col-8 li .share_text,
+.mast .shariff .orientation-horizontal.col-9 li .share_text,
+.mast .shariff .orientation-horizontal.col-10 li .share_text {
+    	display: none;
+}
 
 <xen:if is="{xen:property enableResponsive} && {$xenOptions.itm_ctSSB_ResWidth}">
 	<xen:set var="$itm_ctSSB_ResWidth">{$xenOptions.itm_ctSSB_ResWidth}</xen:set>
@@ -646,7 +915,7 @@ Set width in px (e.g. 62px).]]></phrase>
 	}
 
 	@media (max-width:{xen:property maxResponsiveMediumWidth}) {
-		.Responsive .sharePage {display: inline !important;}
+		.Responsive .sharePage {display: block !important;}
 		.Responsive .shariff ul.theme-standard.orientation-horizontal {display: inline !important;}
 		.Responsive .shariff .orientation-horizontal li {
 			min-width: {$itm_ctSSB_ResWidth} !important;
@@ -656,7 +925,7 @@ Set width in px (e.g. 62px).]]></phrase>
 	}
 
 	@media (max-width:{xen:property maxResponsiveNarrowWidth}) {
-		.Responsive .sharePage {display: inline !important;}
+		.Responsive .sharePage {display: block !important;}
 		.Responsive .shariff .orientation-horizontal li {
 			min-width: {$itm_ctSSB_ResWidth} !important;
 			-webkit-flex: none !important; -ms-flex: none !important; flex: none !important;
@@ -664,18 +933,20 @@ Set width in px (e.g. 62px).]]></phrase>
 		.Responsive .shariff .orientation-horizontal li .share_text {display: block !important;}
 	}
 </xen:if>]]></template>
-    <template title="itm_ctSSB_share_page" version_id="1025200" version_string="1.25.2"><![CDATA[<div class="shariff" 
-	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="js/itm/ctSSB/backend/"'} 
+    <template title="itm_ctSSB_share_page" version_id="2012007" version_string="2.1.2b"><![CDATA[<div class="shariff" 
+	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="{$xenOptions.boardUrl}/itm-shariff.php"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaCat}, 'data-flattr-category="{$xenOptions.itm_ctSSB_enable_FL.flaCat}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaUs}, 'data-flattr-user="{$xenOptions.itm_ctSSB_enable_FL.flaUs}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-url="mailto:"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-subject="{xen:phrase itm_ctSSB_email_subject}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-body="{xen:phrase itm_ctSSB_email_body, 'sitename={$xenOptions.boardTitle}'} - {$url}"'} 
 	data-theme="{$xenOptions.itm_ctSSB_theme}" 
+	data-button-style="{$xenOptions.itm_ctSSB_buttonStyle}" 
 	data-orientation="horizontal" 
 	{xen:if {$thread.title}, 'data-title="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'}
 	data-media-url="{xen:if '{xen:property ogLogoPath}', '{xen:helper fullurl, {xen:property ogLogoPath}, 1}', 'null'}"
 	data-url="{xen:if {$url}, '{$url}', '{$xenOptions.boardUrl}'}" 
+	{xen:if {$xenOptions.tweet.via}, 'data-twitter-via="{$xenOptions.tweet.via}"'} 
 	data-lang="{$xenOptions.itm_ctSSB_lang}" 
 	data-services="[
 		{xen:if {$xenOptions.itm_ctSSB_enable_FB}, '&quot;facebook&quot;'}
@@ -696,6 +967,7 @@ Set width in px (e.g. 62px).]]></phrase>
 		{xen:if {$xenOptions.itm_ctSSB_enable_TWB}, ',&quot;tencent-weibo&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_QZ}, ',&quot;qzone&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_VK}, ',&quot;vk&quot;'}
+		{xen:if {$xenOptions.itm_ctSSB_enable_FLB}, ',&quot;flipboard&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_AT}, ',&quot;addthis&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_EM}, ',&quot;mail&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_PR}, ',&quot;print&quot;'}
@@ -703,22 +975,24 @@ Set width in px (e.g. 62px).]]></phrase>
 	{xen:if {$xenOptions.itm_ctSSB_infoURL}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}
 	data-info-display="{$xenOptions.itm_ctSSB_infoURLDisplay}">
 </div>]]></template>
-    <template title="itm_ctSSB_sidebar_share_page" version_id="1025200" version_string="1.25.2"><![CDATA[<div class="shariff" 
-	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="js/itm/ctSSB/backend/"'} 
+    <template title="itm_ctSSB_sidebar_share_page" version_id="2012007" version_string="2.1.2b"><![CDATA[<div class="shariff" 
+	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="{$xenOptions.boardUrl}/itm-shariff.php"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaCat}, 'data-flattr-category="{$xenOptions.itm_ctSSB_enable_FL.flaCat}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaUs}, 'data-flattr-user="{$xenOptions.itm_ctSSB_enable_FL.flaUs}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-url="mailto:"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-subject="{xen:phrase itm_ctSSB_email_subject}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-body="{xen:phrase itm_ctSSB_email_body, 'sitename={$xenOptions.boardTitle}'} - {$url}"'} 
 	data-theme="{$xenOptions.itm_ctSSB_theme}" 
-	data-orientation="vertical" 
+	data-button-style="{$xenOptions.itm_ctSSB_buttonStyle}" 
+	data-orientation="{xen:if '{$xenOptions.itm_ctSSB_enable_SideHor}', 'horizontal', 'vertical'}" 
 	{xen:if {$thread.title}, 'data-title="{xen:helper threadPrefix, $thread, escaped}{$thread.title}"'}
 	data-media-url="{xen:if '{xen:property ogLogoPath}', '{xen:helper fullurl, {xen:property ogLogoPath}, 1}', 'null'}"
 	data-url="{xen:if {$url}, '{$url}', '{$xenOptions.boardUrl}'}" 
+	{xen:if {$xenOptions.tweet.via}, 'data-twitter-via="{$xenOptions.tweet.via}"'} 
 	data-lang="{$xenOptions.itm_ctSSB_lang}" 
 	data-services="[
 		{xen:if {$xenOptions.itm_ctSSB_enable_FB}, '&quot;facebook&quot;'}
-		{xen:if {$xenOptions.itm_ctSSB_enable_WA}, ',&quot;whatsapp&quot;'}
+		{xen:if '{$xenOptions.itm_ctSSB_enable_WA} && {xen:helper ITMctSSBmobile}', ',&quot;whatsapp&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_TW}, ',&quot;twitter&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_GP}, ',&quot;googleplus&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_LI}, ',&quot;linkedin&quot;'}
@@ -735,6 +1009,7 @@ Set width in px (e.g. 62px).]]></phrase>
 		{xen:if {$xenOptions.itm_ctSSB_enable_TWB}, ',&quot;tencent-weibo&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_QZ}, ',&quot;qzone&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_VK}, ',&quot;vk&quot;'}
+		{xen:if {$xenOptions.itm_ctSSB_enable_FLB}, ',&quot;flipboard&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_AT}, ',&quot;addthis&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_EM}, ',&quot;mail&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_PR}, ',&quot;print&quot;'}
@@ -742,18 +1017,20 @@ Set width in px (e.g. 62px).]]></phrase>
 	{xen:if {$xenOptions.itm_ctSSB_infoURL}, 'data-info-url="{$xenOptions.itm_ctSSB_infoURL}"'}
 	data-info-display="{$xenOptions.itm_ctSSB_infoURLDisplay}">
 </div>]]></template>
-    <template title="itm_ctSSB_xengallery_media_view_sidebar" version_id="1025200" version_string="1.25.2"><![CDATA[<div class="shariff" 
-	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="js/itm/ctSSB/backend/"'} 
+    <template title="itm_ctSSB_xengallery_media_view_sidebar" version_id="2012007" version_string="2.1.2b"><![CDATA[<div class="shariff" 
+	{xen:if {$xenOptions.itm_ctSSB_enable_counters}, 'data-backend-url="{$xenOptions.boardUrl}/itm-shariff.php"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaCat}, 'data-flattr-category="{$xenOptions.itm_ctSSB_enable_FL.flaCat}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_FL.flaUs}, 'data-flattr-user="{$xenOptions.itm_ctSSB_enable_FL.flaUs}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-url="mailto:"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-subject="{xen:phrase itm_ctSSB_email_subject}"'} 
 	{xen:if {$xenOptions.itm_ctSSB_enable_EM}, 'data-mail-body="{xen:phrase itm_ctSSB_email_body, 'sitename={$xenOptions.boardTitle}'} - {$url}"'} 
 	data-theme="{$xenOptions.itm_ctSSB_theme}" 
-	data-orientation="vertical" 
+	data-button-style="{$xenOptions.itm_ctSSB_buttonStyle}" 
+	data-orientation="{xen:if '{$xenOptions.itm_ctSSB_enable_SideHor}', 'horizontal', 'vertical'}" 
 	data-title="{$itm_xfmg_data_title}" 
 	data-media-url="{xen:if '{xen:property ogLogoPath}', '{xen:helper fullurl, {xen:property ogLogoPath}, 1}', 'null'}" 
 	data-url="{$url}" 
+	{xen:if {$xenOptions.tweet.via}, 'data-twitter-via="{$xenOptions.tweet.via}"'} 
 	data-lang="{$xenOptions.itm_ctSSB_lang}" 
 	data-services="[
 		{xen:if {$xenOptions.itm_ctSSB_enable_FB}, '&quot;facebook&quot;'}
@@ -774,6 +1051,7 @@ Set width in px (e.g. 62px).]]></phrase>
 		{xen:if {$xenOptions.itm_ctSSB_enable_TWB}, ',&quot;tencent-weibo&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_QZ}, ',&quot;qzone&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_VK}, ',&quot;vk&quot;'}
+		{xen:if {$xenOptions.itm_ctSSB_enable_FLB}, ',&quot;flipboard&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_AT}, ',&quot;addthis&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_EM}, ',&quot;mail&quot;'}
 		{xen:if {$xenOptions.itm_ctSSB_enable_PR}, ',&quot;print&quot;'}
@@ -829,21 +1107,51 @@ $0
 </xen:if>
 </xen:if>]]></replace>
     </modification>
+    <modification template="xenzine_share_buttons_horiz" modification_key="SetButtonsIntoXenZineTemplate" description="Set buttons into xenzine template" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[<xen:if is="{$xenOptions.tweet.enabled}">
+	<div class="tweet shareHorizControl">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"
+			data-lang="{xen:helper twitterLang, $visitorLanguage.language_code}"
+			data-url="{$url}"
+			{xen:if {$xenOptions.tweet.via}, 'data-via="{$xenOptions.tweet.via}"'}
+			{xen:if {$xenOptions.tweet.related}, 'data-related="{$xenOptions.tweet.related}"'}>{xen:phrase tweet}</a>
+	</div>
+</xen:if>		
+<xen:if is="{$xenOptions.plusone}">
+	<div class="plusone shareHorizControl">
+		<div class="g-plusone" data-size="medium" data-count="true" data-href="{$url}"></div>
+	</div>
+</xen:if>
+<xen:if is="{$xenOptions.facebookLike}">
+	<div class="facebookLike shareHorizControl">
+		<xen:container var="$facebookSdk">1</xen:container>
+		<fb:like href="{$url}" layout="button_count" action="{$xenOptions.facebookLikeAction}" font="trebuchet ms" colorscheme="{xen:property fbColorScheme}"></fb:like>
+	</div>
+</xen:if>]]></find>
+      <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_enable_XenZineSharePage} && {$xenOptions.itm_ctSSB_disable_defaultButtons}">
+<xen:require css="itm_ctSSB_extra.css" />
+<xen:include template="itm_ctSSB_share_page" />
+<xen:else />
+<xen:if is="!{$xenOptions.itm_ctSSB_disable_defaultButtons}">
+$0
+</xen:if>
+</xen:if>]]></replace>
+    </modification>
     <modification template="PAGE_CONTAINER" modification_key="SetCSSforAddOn" description="Insert CSS in Template" execution_order="10" enabled="1" action="str_replace">
       <find><![CDATA[<!--XenForo_Require:CSS-->]]></find>
       <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_insertCSS} == 'loc' && {$xenOptions.itm_ctSSB_insertCSS_local}">
    <link rel="stylesheet" href="{$xenOptions.itm_ctSSB_insertCSS_local}" />
 <xen:elseif is="{$xenOptions.itm_ctSSB_insertCSS} == 'min'" />
-   <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-2.1.2/shariff.min.css" />
+   <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-3.0.1/shariff.min.css" />
 <xen:else />
-   <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-2.1.2/shariff.complete.css" />
+   <link rel="stylesheet" href="//maxcdn.it-maku.com/git/shariff-3.0.1/shariff.complete.css" />
 </xen:if>
 $0]]></replace>
     </modification>
     <modification template="footer" modification_key="SetCopyright" description="Set Copyright to Footer" execution_order="10" enabled="1" action="str_replace">
       <find><![CDATA[{xen:helper copyright}]]></find>
       <replace><![CDATA[<xen:if is="{$xenOptions.itm_ctSSB_support_me} === 'show'">
-$0 - <a href="https://www.it-maku.com" class="concealed">Shariff Social Buttons<span> &copy;2016</span></a>
+$0 - <a href="https://www.it-maku.com" class="concealed">Shariff Social Buttons<span> &copy;2018</span></a>
 <xen:else/>
 $0
 </xen:if>]]></replace>
@@ -865,9 +1173,9 @@ $0
 <xen:if is="{$xenOptions.itm_ctSSB_insertJS} == 'loc' && {$xenOptions.itm_ctSSB_insertJS_local}">
    <script src="{$xenOptions.itm_ctSSB_insertJS_local}" /"></script>
 <xen:elseif is="{$xenOptions.itm_ctSSB_insertJS} == 'min'" />
-   <script src="//maxcdn.it-maku.com/git/shariff-2.1.2/shariff.min.js" /"></script>
+   <script src="//maxcdn.it-maku.com/git/shariff-3.0.1/shariff.min.js" /"></script>
 <xen:else />
-   <script src="//maxcdn.it-maku.com/git/shariff-2.1.2/shariff.complete.js" /"></script>
+   <script src="//maxcdn.it-maku.com/git/shariff-3.0.1/shariff.complete.js" /"></script>
 </xen:if>]]></replace>
     </modification>
     <modification template="share_page" modification_key="SetToSharePage" description="Set Buttons into Template" execution_order="15" enabled="1" action="preg_replace">
