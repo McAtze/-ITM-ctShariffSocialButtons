@@ -2,6 +2,20 @@
 
 class ITM_ctSSB_Listener
 {
+<<<<<<< HEAD
+=======
+    /**
+     * @param $templateName
+     * @param $content
+     * @param array $containerData
+     * @param XenForo_Template_Abstract $template
+     */
+    
+    public static function template_post_render($templateName, &$content, array &$containerData, XenForo_Template_Abstract $template)
+    {
+        if ($template instanceof XenForo_Template_Admin) {
+            $params = $template->getParams();
+>>>>>>> origin/master
 
 	/**
 	 * @param $templateName
