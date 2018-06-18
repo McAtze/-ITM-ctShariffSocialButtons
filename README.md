@@ -30,18 +30,18 @@ Xenforo AddOns that will work with these Share Options:
 
 ## Screenshots
 #### Options in ACP
-![Options#1 in ACP](https://maxcdn.it-maku.com/git/shariff/Options-1.png)
-![Options#2 in ACP](https://maxcdn.it-maku.com/git/shariff/Options-2.png)
-![Options#3 in ACP](https://maxcdn.it-maku.com/git/shariff/Options-3.png)
+![Options#1 in ACP](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/Options-1.png)
+![Options#2 in ACP](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/Options-2.png)
+![Options#3 in ACP](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/Options-3.png)
 #### Buttons in CTA-FT,XFMG and Threads
-![Options#4 in ACP](https://maxcdn.it-maku.com/git/shariff/Below-Thread.png)
-![Options#5 in ACP](https://maxcdn.it-maku.com/git/shariff/CTA-Featured-Threads.png)
-![Options#6 in ACP](https://maxcdn.it-maku.com/git/shariff/XFMG-Image.png)
+![Options#4 in ACP](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/Below-Thread.png)
+![Options#5 in ACP](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/CTA-Featured-Threads.png)
+![Options#6 in ACP](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/XFMG-Image.png)
 #### Buttons in Sidebar
-![Buttons in Sidebar](https://maxcdn.it-maku.com/git/shariff/Sidebar.png)
+![Buttons in Sidebar](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/Sidebar.png)
 #### Default Theme
-![Theme Default](https://maxcdn.it-maku.com/git/shariff/Theme_default.png)
+![Theme Default](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/Theme_default.png)
 #### Grey Theme
-![Theme Grey](https://maxcdn.it-maku.com/git/shariff/Theme_grey.png)
+![Theme Grey](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/Theme_grey.png)
 #### White Theme
-![Theme White](https://maxcdn.it-maku.com/git/shariff/Theme_white.png)
+![Theme White](https://github.com/McAtze/-ITM-ctShariffSocialButtons/blob/master/Screenshot/Theme_white.png)
