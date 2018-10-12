@@ -1,5 +1,9 @@
 ## Changelog
 
+#### v3.0.1.1 (2018-10-12)
+  * Update shariff-backend to v7.1.4
+  * See changes @https://github.com/heiseonline/shariff-backend-php/blob/master/CHANGELOG.md
+  
 #### v3.0.1 (2018-04-26)
   * Fixed SEO friendliness by adding `rel="nofollow"` to all button links.
   * Fixed Telegram service not opening in a popup.
