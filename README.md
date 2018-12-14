@@ -1,5 +1,4 @@
 # -ITM- c't Shariff Social Buttons
-[![StyleCI](https://styleci.io/repos/63004175/shield?branch=master)](https://styleci.io/repos/63004175)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/McAtze/-ITM-ctShariffSocialButtons.svg)](http://isitmaintained.com/project/McAtze/-ITM-ctShariffSocialButtons "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/McAtze/-ITM-ctShariffSocialButtons.svg)](http://isitmaintained.com/project/McAtze/-ITM-ctShariffSocialButtons "Percentage of issues still open")
 
